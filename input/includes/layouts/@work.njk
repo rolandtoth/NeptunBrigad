@@ -1,0 +1,108 @@
+{% extends 'layouts/@default.njk' %}
+
+{% block title %}
+<div class="title-wrap">
+  <h1>{{ title }}</h1>
+</div>
+{% if genre %}
+  <p class="headline-copy">{{ genre }}</p>
+{% endif %}
+{% endblock %}
+
+{% block main %}
+<div class="work-details">
+  <aside>
+    <div>
+      {% set isLongText = (content | striptags | replace(" ", "")).length > 400 %}
+      {# {{ (content | striptags | replace(" ", "")).length }} #}
+      {% if isLongText %}
+        <input type="checkbox" id="text-toggle">
+      {% endif %}
+        <div class="work-body">
+          {{ content | safe }}
+        </div>
+      {% if isLongText %}
+      <p class="text-toggle">
+        <label for="text-toggle"></label>
+          {# <span>&#9660; Teljes leírás...</span>
+          <span>&#9650; Összezárás</span> #}
+        {# </label> #}
+      </p>
+      {% endif %}
+    </div>
+    {% if actors %}
+    <h3>Szereplők</h3>
+    <ul class="actors">
+    {% for key, value in actors %}
+      <li>
+        {{ key }}: {{ value }}
+      </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% if producers %}
+    <h3>Alkotók</h3>
+    <ul class="producers">
+    {% for key, value in producers %}
+      <li>
+        {{ key }}: {{ value }}
+      </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% if premier %}
+    <h3>Bemutató</h3>
+    <p class="premier">
+        {{ premier.theater }}, {{ premier.date | dateDisplay }} {{ premier.time }}
+    </p>
+    {% endif %}
+    <h3>Megosztás</h3>
+    {% include "sharingbuttons.njk" %}
+  </aside>
+
+  <div>
+    {% if gallery %}
+      <section class="gallery">
+        <h3 class="hidden">Galéria</h3>
+        <div>
+        {{ gallery | renderGalleryItems | safe }}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if videos %}
+      <section class="videos">
+        <h3>Videók</h3>
+        <div>
+        {% for url in videos %}
+          {{ url | embedVideo | safe }}
+        {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if critics %}
+      <section class="critics">
+        <h3>Kritikák</h3>
+        <div>
+        {% for critic in critics %}
+        {% set criticPage = critic | getPageByPath(collections.critic) %}
+        <div class="critic">
+        <blockquote>
+        <p>
+          {{ criticPage.data.excerpt }}
+         </p>
+        </blockquote>
+        <a href="{{ criticPage.url }}">{{ criticPage.data.title }}</a>
+        </div>
+        {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+  </div>
+  <p class="clear">
+    <a href="../" class="back"><span>Vissza</span></a>
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+      {% for item in cfg.footerMenu %}
+        <li>
+            <a href="{{ item[1] | url }}" target="_blank">
+                <img src="{{ item[0] | cacheVersion }}" alt="" width="{{ item[2] }}" height="{{ item[3] }}" />
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

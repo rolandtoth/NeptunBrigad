@@ -1,0 +1,5 @@
+{
+  "layout": "../includes/layouts/@work.njk",
+  "tags": "work",
+  "templateEngineOverride": "njk,md"
+}

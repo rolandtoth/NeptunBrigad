@@ -1,0 +1,12 @@
+---
+title: Kapcsolat
+permalink: kapcsolat/
+date: Last Modified
+---
+{% extends 'layouts/@default.njk' %}
+
+{% block main %}
+<h3>{{ cfg.siteName }} Közhasznú Egyesület</h3>
+<p>Telefon: <a href="tel:{{ cfg.phone }}">{{ cfg.phone }}</a></p>
+<p>Facebook: <a href="{{ cfg.facebook }}">{{ cfg.siteName }}</a></p>
+{% endblock %}

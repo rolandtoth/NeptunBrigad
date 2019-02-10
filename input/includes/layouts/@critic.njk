@@ -1,0 +1,20 @@
+{% extends 'layouts/@default.njk' %}
+{% set workPage = workRef | getPageByPath(collections.work) %}
+
+{% block title %}
+<div class="title-wrap">
+  <h1>{{ title }}</h1>
+</div>
+<p class="headline-copy">
+  {{ externalSource.title }} (<a href="{{ workPage.url | url }}">{{ workPage.data.title }}</a>) | <a href="{{ externalSource.url }}" target="_blank">Forrás</a>
+</p>
+{% endblock %}
+
+{% block main %}
+<div class="post">
+    {{ content | safe }}
+</div>
+<p class="clear">
+  <a href="{{ workPage.url | url }}" class="back"><span>Vissza a darabhoz</span></a>
+</p>
+{% endblock %}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="hu" class="no-js">
+    <head>
+        {%- set description = (seo_description or excerpt or cfg.slogan or title) %}
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <title>{{ title | pageTitle}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ description }}">
+        <meta name="theme-color" content="#0a0d12">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:url" content="{{ page.url | httpUrl }}">
+        <meta property="fb:app_id" content="966242223397117">
+        <meta property="og:logo" content="{{ "/assets/images/logo-neptunbrigad-dark.png" | httpUrl }}" size="310x66">
+        {% if img -%}
+            {%- set dimensions = img | postImage("works") | imageDimensions("object") %}
+            <meta property="og:image" content="{{ img | postImage("works") | httpUrl }}">
+            <meta property="og:image:width" content="{{ dimensions.width }}">
+            <meta property="og:image:height" content="{{ dimensions.height }}">
+        {% else %}
+            <meta property="og:image" content="{{ '/assets/images/neptunbrigad.png' | httpUrl }}">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+        {%- endif %}
+        <script>document.querySelector('html').classList.remove('no-js');</script>
+        <link rel="stylesheet" href="{{ cfg.css | url | cacheVersion }}"/>
+        {% include "favicon.njk" %}
+    </head>
+    <body class="{% if page.fileSlug !== '' %}{{ page.fileSlug }}{% else %}home{% endif %}">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle"><i></i></label>
+        <header>
+            <div class="container">
+                <a href="{{ "/" | url }}" class="logo">
+                    <img src="{{ cfg.logo | url | cacheVersion }}" alt="{{ cfg.siteName }} logo" width="336" height="71"/>
+                    <span>Nyitott színházi társulat</span>
+                </a>
+                {% include "menu.njk" %}
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="title">
+                <div class="container">
+                    {% block title %}
+                    <h1>{{ title }}</h1>
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="container">
+                {% block main %}{% endblock %}
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div>
+                    {% include "menu.njk" %}
+                    {% include "footermenu.njk" %}
+                    <p class="developer-link"><a href="{{ cfg.developerUrl }}">rolandtoth</a></p>
+                </div>
+            </div>
+        </footer>
+        {% for script in cfg.scripts %}
+        <script src="{{ script | url | cacheVersion }}" defer></script>
+        {% endfor %}
+    </body>
+</html>

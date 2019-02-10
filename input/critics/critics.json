@@ -1,0 +1,5 @@
+{
+  "layout": "../includes/layouts/@critic.njk",
+  "tags": "critic",
+  "templateEngineOverride": "njk,md"
+}

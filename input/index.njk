@@ -1,0 +1,26 @@
+---
+{
+  date: Last Modified
+}
+---
+
+{% extends 'layouts/@default.njk' %}
+
+{% block title %}{% endblock %}
+
+{% block main %}
+<section class="articles">
+  <h2 class="hidden">Darabok</h2>
+  <div>
+  {% for page in collections.work %}
+    {% if loop.index === 2 %}
+    <div class="masonry">
+    {% endif %}
+    {% include "article.njk" %}
+  {% endfor %}
+  </div>
+  </div>
+</section>
+{%- set js %}{% include "scripts/premier.js" %}{% endset -%}
+<script>{{ js | jsMin | safe }}</script>
+{% endblock %}

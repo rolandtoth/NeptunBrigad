@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     loadAsset(scriptsDir + 'baguettebox/baguettebox.min.css?selector=".gallery"&async=true', function () {
-
         var selector = this.selector;
 
         loadAsset(scriptsDir + 'baguettebox/baguettebox.min.js?async=true', function () {
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function labnolIframe() {
-
     /**
      * todo 
      * add mute, play-inline attributes to autostart on mobile

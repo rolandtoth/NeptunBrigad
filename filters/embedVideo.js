@@ -10,8 +10,9 @@ module.exports = function (url) {
 
     if (url.constructor === Array) {
         videoData.service = url[0];
-        videoData.id = url[1];
-        thumb = getFacebookVideoId(url[1]);
+        videoData.id = encodeURIComponent(url[1]);
+        thumb = getFacebookVideoId(videoData.id);
+        url = false; // skip downloading image, must be copied manually to assets/images/video-thumbs folder
     } else {
         videoData = getVideoId(url);
     }

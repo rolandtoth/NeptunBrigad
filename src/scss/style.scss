@@ -351,6 +351,10 @@ nav {
         a {
             position: relative;
             top: 4px;
+            &:hover {
+                background: transparent;
+                opacity: 0.75;
+            }
         }
     }
 }

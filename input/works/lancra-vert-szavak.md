@@ -30,7 +30,7 @@
     },
     "videos": [
         "https://www.youtube.com/watch?v=0WY-kyLZWlU",
-        ["facebook", "https%3A%2F%2Fwww.facebook.com%2Frs9official%2Fvideos%2F2198498486831298%2F"]
+        ["facebook", "https://www.facebook.com/rs9official/videos/2198498486831298/"]
     ],
     "genre": "Pszichothriller"
 }

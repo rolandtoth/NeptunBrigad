@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         div.onclick = labnolIframe;
     }
 
-    loadAsset(scriptsDir + 'baguetteBox/baguetteBox.min.css?selector=".gallery"&async=true', function () {
+    loadAsset(scriptsDir + 'baguettebox/baguettebox.min.css?selector=".gallery"&async=true', function () {
 
         var selector = this.selector;
 
-        loadAsset(scriptsDir + 'baguetteBox/baguetteBox.min.js?async=true', function () {
+        loadAsset(scriptsDir + 'baguettebox/baguettebox.min.js?async=true', function () {
 
             baguetteBox.run(selector, {
                 'animation': 'slideIn',

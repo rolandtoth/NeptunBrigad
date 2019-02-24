@@ -15,7 +15,8 @@
         "Dramaturg": "Róbert Júlia",
         "Asszisztens": "Solténszky Ráhel",
         "Látványtervező": "Kovács Dániel Ambrus",
-        "Rendező": "Kovács Dániel Ambrus"
+        "Rendező": "Kovács Dániel Ambrus",
+        "Fotós": "Gulyás Dóra"
     },
     "actors": {
         "Cégvezető Roland": "Chován Gábor",

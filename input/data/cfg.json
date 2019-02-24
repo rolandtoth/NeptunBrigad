@@ -75,7 +75,7 @@
     "sharingbuttons": {
         "facebook": true,
         "twitter": true,
-        "googleplus": true,
+        "googleplus": false,
         "tumblr": true,
         "email": true,
         "pinterest": true

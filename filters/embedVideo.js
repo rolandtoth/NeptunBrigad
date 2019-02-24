@@ -26,6 +26,8 @@ module.exports = function (url) {
 
     imgFile = 'assets/images/video-thumbs/' + service + '-' + (thumb ? thumb : id) + '.jpg';
 
+    imgFile = imgFile.toLowerCase();
+
     if (!fs.existsSync(imgFile)) {
         videoThumbnailUrl(url).then(thumb_url => { // thumb_url is  url or null
 

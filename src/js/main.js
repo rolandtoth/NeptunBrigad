@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div = document.createElement("div");
         div.setAttribute("data-video-id", id);
         div.setAttribute("data-video-service", service);
-        div.innerHTML = '<img data-src="' + thumbUrl + '" class="lazyload"/><div class="play"></div>';
+        div.innerHTML = '<img data-src="' + thumbUrl.toLowerCase() + '" class="lazyload"/><div class="play"></div>';
 
         $el.appendChild(div);
 
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
         var selector = this.selector;
 
         loadAsset(scriptsDir + 'baguettebox/baguettebox.min.js?async=true', function () {
-
             baguetteBox.run(selector, {
                 'animation': 'slideIn',
                 'async': true,

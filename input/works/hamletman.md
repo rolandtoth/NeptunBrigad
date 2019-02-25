@@ -1,7 +1,7 @@
 ---json
 {
     "title": "Hamletman",
-    "excerpt": "Két Hamlet előadás. Az egyik egy kamaszoknak tartott Hamlet beavató előadás, amit Ficzere Béla színész-drámatanár vezet. A másik pedig egy felnőtt beavató előadás, aminek vezetője Kállay Géza egyetemi tanár. Mindkét előadás egy Hamlet monodráma köré összpontosul, amit Baksa Imre ad elő.",
+    "excerpt": "Shakespeare Hamlet című tragédiájának előadója Baksa Imre, aki monodrámaként adja elő a tíz szereplőre húzott Shakespeare-szöveget, Nádasdy Ádám (és helyenként Arany János) fordításában. Az előadás végigmegy a történeten, és annak legfőbb kérdésein: titok, bűn, a jogos bosszú végrehajtásának vagy elmulasztásának erkölcsi problémája.",
     "permalink": "/{{ title | slug }}/",
     "img": "hamletman.jpg",
     "premier": {
@@ -20,6 +20,6 @@
 }
 ---
 
-Shakespeare: Hamlet színdarab előadója Baksa Imre, aki monodrámaként adja elő a 10 szereplőre húzott Shakespeare szöveget, amit Nádasdy Ádám (és Arany János) fordított. Nagyon nagy kihívás volt számára, hogy egy érthető és átlátható produkciót készítsen. Az előadás végig megy a történeten és a főbb Hamleti problémákat érinti:titok,bűn,tett vagy nem tett,szakítás,csalódás stb. A darabot nem ismerve is élvezetes élményt szerez a diákoknak a látottak, hiszen színes,változatos  karakterek elevenednek meg, amik a könnyebb megértést szolgálják. A játék végére úgy tűnhet, hogy Hamlet fejében játszódik le minden történés, ami még erősebbé teszi hóbortosságát, magányát. A monodráma ennek ellenére sok humorral van előadva, ami a tragikomédiák világát idézik.
+Shakespeare Hamlet című tragédiájának előadója Baksa Imre, aki monodrámaként adja elő a tíz szereplőre húzott Shakespeare-szöveget, Nádasdy Ádám (és helyenként Arany János) fordításában. Az előadás végigmegy a történeten, és annak legfőbb kérdésein: titok, bűn, a jogos bosszú végrehajtásának vagy elmulasztásának erkölcsi problémája. A karakterek sok ötlettel elevenednek meg, így szolgálva a könnyebb megértést és azonosulást. Az előadás végére úgy tűnhet: minden fordulat Hamlet fejében játszódott le, s ez még erősebbé teszi súlyos magányát. Baksa Imrének ugyanakkor sikerül sok humorral elegyítenie a játékot, finoman egyensúlyozva tragikum és komikum határán.
 
-Az előadás közben az előadó narrációkkal egészíti ki a látottakat, amely segíti bemutatni Shakespeare írói műhelytitkait, és a világirodalom legismertebb darabjának érdekességeit. A produkció eddig a felnőtt közönségtől kezdve az egyetemista és középiskolás hallgatókig eljutott. Az előadást minden nézőnek ajánljuk, vagy azért, mert olvasta a művet ,vagy azért , mert a látottak után fog csak bele az olvasásba.
+Az előadás közben Győrei Zsolt író és drámatörténész dramaturgiai észrevételekkel egészíti ki a látottakat, ezzel segít a nézőknek rácsodálkozni Shakespeare műhelytitkaira és a drámai alkotás működésére. A produkció a felnőtt közönségnek ugyanolyan izgalmas kérdésfelvetéseket kínál, mint az egyetemista és középiskolás érdeklődőknek – ezért ajánljuk bármely korosztály tagjainak, akár ismerik már a művet, akár most remélnek kedvet és segítséget kapni az ismerkedéshez.

@@ -138,8 +138,7 @@ body {
 }
 
 h1 {
-    @include highlightLines(0.5rem,
-    $darkcolor);
+    @include highlightLines(0.5rem, $darkcolor);
     font-family: "Lato", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -362,8 +361,8 @@ nav {
     clear: left;
     margin: -0.75rem 0 0;
     a {
-        color: rgba(white, 0.16);
-        font-size: 0.84rem;
+        color: rgba(white, 0.1);
+        font-size: 0.75rem;
         &:not(:hover) {
             text-decoration: none;
         }
@@ -875,6 +874,21 @@ a[href^="tel:"] {
                 display: inline-block;
             }
         }
+    }
+}
+
+.contact-grid {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(white, 0.33);
+    h3 {
+        color: $linkcolor;
+        margin-bottom: 0;
+        @include highlightLines(0.25rem, darken($darkcolor, 0.7%));
+        padding: 0.1rem;
+    }
+
+    @media ($tablet) {
+        @include _fg(1 1, 0, 0);
     }
 }
 

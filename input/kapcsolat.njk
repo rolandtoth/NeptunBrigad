@@ -7,6 +7,61 @@ date: Last Modified
 
 {% block main %}
 <h3>{{ cfg.siteName }} Közhasznú Egyesület</h3>
-<p>Telefon: <a href="tel:{{ cfg.phone }}">{{ cfg.phone }}</a></p>
-<p>Facebook: <a href="{{ cfg.facebook }}">{{ cfg.siteName }}</a></p>
+
+<p>
+    Telefon: <a href="tel:{{ cfg.phone }}">{{ cfg.phone }}</a>
+    <br>
+    Facebook: <a href="{{ cfg.facebook }}">{{ cfg.siteName }}</a>
+</p>
+
+<div class="contact-grid">
+    <div>
+        <h3>Baksa Imre</h3>
+        <p>Színész-rendező, a Neptun Brigád vezetője (<a href="https://baksaimre.hu" target="_blank">baksaimre.hu</a>)</p>
+
+        <h3>Duró Gábor</h3>
+        <p>Dramaturg</p>
+
+        <h3>Sáfrány Eszter</h3>
+        <p>Produkciós vezető</p>
+
+        <h3>Gáspár Anna</h3>
+        <p>Menedzser</p>
+
+        <h3>Lippai Krisztina</h3>
+        <p>Rendező asszisztens</p>
+
+        <h3>Rada Lilla</h3>
+        <p>Ügyvéd</p>
+
+        <h3>Gegesi-Kiss Tamás</h3>
+        <p>Üzletember</p>
+    </div>
+
+    <div>
+        <h3>Színészek</h3>
+
+        <ul>
+            <li>Chován Gábor</li>
+            <li>Vass György</li>
+            <li>Cseh Judit</li>
+            <li>Botos Éva</li>
+            <li>Ficzere Béla</li>
+            <li>Kövesdi László</li>
+            <li>Lengyel Tamás</li>
+            <li>Jászberényi Gábor</li>
+            <li>Álmosd Phaedra</li>
+            <li>Kadlott Zsófia</li>
+        </ul>
+
+        <h3>Rendezők</h3>
+
+        <ul>
+            <li>Koleszár Bazil Péter</li>
+            <li>Cseh Judit</li>
+            <li>Kovács Dániel Ambrus</li>
+            <li>Baksa Imre</li>
+        </ul>
+    </div>
+</div>
 {% endblock %}

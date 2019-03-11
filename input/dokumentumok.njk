@@ -2,13 +2,26 @@
 title: Dokumentumok
 permalink: dokumentumok/
 date: Last Modified
+documents:
+- Éves beszámoló 2017: neptun-brigad-eves-beszamolo-2017.pdf
+- Aláírási címpéldány 2016: neptun-brigad-alairasi-cimpeldany-2016.pdf
+- Cégkivonat 2016: neptun-brigad-cegkivonat-2016.pdf
+- Éves beszámoló 2016: neptun-brigad-eves-beszamolo-2016.pdf
+- Éves beszámoló kiegészítő melléklet 2016: neptun-brigad-eves-beszamolo-kiegeszito-melleklet-2016.pdf
+- Alapszabályzat 2015: neptun-brigad-alapszabalyzat-2015.pdf
+- Taggyűlés 2014: neptun-brigad-taggyules-2014.pdf
 ---
+
 {% extends 'layouts/@default.njk' %}
 
 {% block main %}
 <ul class="documents">
-    <li>
-        <a href="/assets/documents/neptun-brigad-kozhasznu-egyesulet-eves-beszamolo-2017.pdf">Éves beszámoló 2017</a>
-    </li>
+    {% for doc in documents %}
+        {% for name, file in doc %}
+            <li>
+                <a href="{{ ("/assets/documents/" + file) | url | cacheVersion }}" target="_blank">{{ name }}</a>
+            </li>
+        {% endfor %}
+    {% endfor %}
 </ul>
 {% endblock %}

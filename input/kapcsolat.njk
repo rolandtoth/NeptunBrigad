@@ -2,6 +2,32 @@
 title: Kapcsolat
 permalink: kapcsolat/
 date: Last Modified
+members:
+- Baksa Imre: Színész-rendező, a Neptun Brigád vezetője (<a href="https://baksaimre.hu" target="_blank">baksaimre.hu</a>)
+- Duró Gábor: Dramaturg
+- Sáfrány Eszter: Produkciós vezető
+- Gáspár Anna: Menedzser
+- Lippai Krisztina: Rendező asszisztens
+- Rada Lilla: Ügyvéd
+- Gegesi-Kiss Tamás: Üzletember
+actors:
+- Chován Gábor
+- Vass György
+- Cseh Judit
+- Botos Éva
+- Ficzere Béla
+- Kövesdi László
+- Lengyel Tamás
+- Jászberényi Gábor
+- Álmosd Phaedra
+- Kadlott Zsófia
+- Kakasy Dóra
+- Huszár Zsolt (†)
+directors:
+- Koleszár Bazil Péter
+- Cseh Judit
+- Kovács Dániel Ambrus
+- Baksa Imre
 ---
 {% extends 'layouts/@default.njk' %}
 
@@ -16,51 +42,29 @@ date: Last Modified
 
 <div class="contact-grid">
     <div>
-        <h3>Baksa Imre</h3>
-        <p>Színész-rendező, a Neptun Brigád vezetője (<a href="https://baksaimre.hu" target="_blank">baksaimre.hu</a>)</p>
-
-        <h3>Duró Gábor</h3>
-        <p>Dramaturg</p>
-
-        <h3>Sáfrány Eszter</h3>
-        <p>Produkciós vezető</p>
-
-        <h3>Gáspár Anna</h3>
-        <p>Menedzser</p>
-
-        <h3>Lippai Krisztina</h3>
-        <p>Rendező asszisztens</p>
-
-        <h3>Rada Lilla</h3>
-        <p>Ügyvéd</p>
-
-        <h3>Gegesi-Kiss Tamás</h3>
-        <p>Üzletember</p>
+        {% for member in members %}
+            {% for name, position in member %}
+                <h3>{{ name }}</h3>
+                <p>{{ position | safe }}</p>
+            {% endfor %}
+        {% endfor %}
     </div>
 
     <div>
         <h3>Színészek</h3>
 
         <ul>
-            <li>Chován Gábor</li>
-            <li>Vass György</li>
-            <li>Cseh Judit</li>
-            <li>Botos Éva</li>
-            <li>Ficzere Béla</li>
-            <li>Kövesdi László</li>
-            <li>Lengyel Tamás</li>
-            <li>Jászberényi Gábor</li>
-            <li>Álmosd Phaedra</li>
-            <li>Kadlott Zsófia</li>
+            {% for name in (actors | localeSort(true, "hu")) %}
+                <li>{{ name }}</li>
+            {% endfor %}
         </ul>
 
         <h3>Rendezők</h3>
 
         <ul>
-            <li>Koleszár Bazil Péter</li>
-            <li>Cseh Judit</li>
-            <li>Kovács Dániel Ambrus</li>
-            <li>Baksa Imre</li>
+            {% for name in (directors | localeSort(true, "hu")) %}
+                <li>{{ name }}</li>
+            {% endfor %}
         </ul>
     </div>
 </div>

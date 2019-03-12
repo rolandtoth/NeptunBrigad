@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("callFunction", require("./filters/callFunction.js"));
   eleventyConfig.addFilter("getImageVariation", require("./filters/getImageVariation.js"));
   eleventyConfig.addFilter("jsMin", require("./filters/jsMin.js"));
+  eleventyConfig.addFilter("localeSort", require("./filters/localeSort.js"));
 
   eleventyConfig.addPassthroughCopy("assets/");
   eleventyConfig.addPassthroughCopy(".htaccess");

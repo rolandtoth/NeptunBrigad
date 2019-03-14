@@ -3,6 +3,7 @@
 {% block title %}
 <div class="title-wrap">
   <h1>{{ title }}</h1>
+  {% include "sharingbuttons.njk" %}
 </div>
 {% if genre %}
   <p class="headline-copy">{{ genre }}</p>
@@ -53,8 +54,6 @@
         {{ premier.theater }}, {{ premier.date | dateDisplay }} {{ premier.time }}
     </p>
     {% endif %}
-    <h3>Megosztás</h3>
-    {% include "sharingbuttons.njk" %}
   </aside>
 
   <div>

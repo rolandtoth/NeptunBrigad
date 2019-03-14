@@ -12,7 +12,7 @@ $images: "/assets/images";
 $_mobile: 480;
 $_tablet: 640;
 $_desktop: 990;
-$_hd: 1240;
+$_hd: 1280;
 $_xhd: 1600;
 $mobile: "min-width: #{$_mobile}px";
 $tablet: "min-width: #{$_tablet}px";
@@ -133,6 +133,9 @@ body {
     padding: 0 1.12rem;
     @media ($desktop) {
         max-width: 80rem;
+        padding: 0 2rem;
+    }
+    @media ($hd) {
         padding: 0 3rem;
     }
 }
@@ -229,10 +232,7 @@ header {
     nav {
         float: right;
         @media ($tablet) {
-            margin-top: 1.48rem;
-        }
-        @media ($hd) {
-            margin-top: 1.78rem;
+            margin-top: 1.25em;
         }
         @media ($max-tablet) {
             display: none;
@@ -252,7 +252,7 @@ header {
             padding: 0.5rem 0.45rem 0.4rem; // background: rgba(black, 0.6); // font-size: 1.04rem;
             text-transform: uppercase;
             font-weight: 400;
-            text-shadow: 0 0 5px rgba(black, 0.75);
+            // text-shadow: 0 0 5px rgba(black, 0.75);
             font-size: 0.96rem;
             &:hover {
                 color: white;
@@ -715,11 +715,6 @@ a[href^="tel:"] {
             padding-right: 3rem;
         }
     }
-    @media ($hd) {
-        @include _fg(1 2,
-        0,
-        0);
-    }
     section {
         >div {
             @include clearfix;
@@ -790,7 +785,7 @@ a[href^="tel:"] {
         margin: 0 0.25rem 0.5rem;
         background: $darkcolor;
         @media ($mobile) {
-            width: 9.33rem;
+            width: 8.66rem;
         }
         &:hover img {
             opacity: 0.84;
@@ -816,7 +811,7 @@ a[href^="tel:"] {
 }
 
 #menu-toggle {
-    @include hamburger($width: 24px, $thickness: 2px, $gap: 5px, $color: white, $padding: 1rem, $anim: 0);
+    @include hamburger($width: 27px, $thickness: 1px, $gap: 8px, $color: white, $padding: 1rem, $anim: 0);
     +label {
         position: fixed;
         top: 0;
@@ -893,9 +888,10 @@ a[href^="tel:"] {
 }
 
 .sharingbuttons {
-    margin-left: -0.2rem;
-    margin-bottom: 2rem;
-    margin-top: -0.25rem;
+    display: inline-block;
+    margin-left: 2rem;
+    position: relative;
+    top: -0.25rem;
 }
 
 .clear {

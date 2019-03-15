@@ -887,11 +887,26 @@ a[href^="tel:"] {
     }
 }
 
+.history {
+    em {
+        display: inline-block;
+        @include highlightLines(0.25rem, $linkcolor);
+        padding-top: 0;
+        font-size: 1.125rem;
+        font-style: normal;
+        margin-right: 0.3rem;
+        line-height: 1;
+    }
+}
+
 .sharingbuttons {
-    display: inline-block;
-    margin-left: 2rem;
-    position: relative;
-    top: -0.25rem;
+    margin-left: -0.25rem;
+    @media($desktop) {
+        display: inline-block;
+        margin-left: 2rem;
+        position: relative;
+        top: -0.25rem;
+    }
 }
 
 .clear {

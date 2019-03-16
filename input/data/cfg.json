@@ -2,7 +2,7 @@
     "siteName": "Neptun Brigád",
     "slogan": "Nyitott színházi társulat",
     "domain": "https://neptunbrigad.hu",
-    "developerUrl": "https://rolandtoth.hu/",
+    "developerUrl": "https://rolandtoth.hu",
     "phone": "+36 70 6100 564",
     "css": "/assets/styles/style.min.css",
     "scripts": [
@@ -55,7 +55,7 @@
     "footerMenu": [
         [
             "/assets/images/footer/logo-eji.png",
-            "https://www.eji.hu/",
+            "https://www.eji.hu",
             60,
             60
         ],
@@ -67,7 +67,7 @@
         ],
         [
             "/assets/images/footer/logo-nka.png",
-            "http://www.nka.hu/",
+            "http://www.nka.hu",
             135,
             60
         ]
@@ -80,5 +80,5 @@
         "email": true,
         "pinterest": true
     },
-    "facebook": "https://www.facebook.com/neptunbrigad/"
+    "facebook": "https://www.facebook.com/neptunbrigad"
 }

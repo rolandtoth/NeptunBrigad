@@ -3,7 +3,7 @@
       {% for p in cfg.menu %}
       {% set url = p[1] | url %}
         <li{% if page.url === url %} class="active"{% endif %}>
-            <a href="{{ url }}">{{ p[0] }}</a>
+            <a href="{{ url }}"{% if url === "/" %} data-home{% endif %}>{{ p[0] }}</a>
         </li>
         {% endfor %}
         <li class="icon-only">

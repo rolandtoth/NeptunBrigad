@@ -13,7 +13,6 @@
         <meta property="og:description" content="{{ description }}">
         <meta property="og:url" content="{{ page.url | httpUrl }}" id="meta-og-url">
         <meta property="fb:app_id" content="966242223397117">
-        <meta property="og:logo" content="{{ "/assets/images/logo-neptunbrigad-dark.png" | httpUrl }}" size="310x66">
         {% if img -%}
             {%- set dimensions = img | postImage("works") | imageDimensions("object") %}
             <meta property="og:image" content="{{ img | postImage("works") | httpUrl }}">

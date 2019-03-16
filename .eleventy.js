@@ -56,7 +56,8 @@ module.exports = function (eleventyConfig) {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: true,
+        collapseBooleanAttributes: true
       });
       return minified;
     }

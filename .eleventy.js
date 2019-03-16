@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("localeSort", require("./filters/localeSort.js"));
 
   eleventyConfig.addPassthroughCopy("assets/");
+  eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy(".htaccess");
 
   eleventyConfig.addPassthroughCopy("android-chrome-192x192.png");

@@ -11,7 +11,7 @@ $images: "/assets/images";
 // breakpoints
 $_mobile: 480;
 $_tablet: 640;
-$_desktop: 990;
+$_desktop: 996;
 $_hd: 1280;
 $_xhd: 1600;
 $mobile: "min-width: #{$_mobile}px";
@@ -27,8 +27,8 @@ $max-hd: "max-width: #{$_xhd - 1}px";
 @import "_normalize";
 @import "_mixins";
 @import "_sharingbuttons";
-@import "fonts/raleway";
-@import "fonts/lato";
+// @import "fonts/raleway";
+// @import "fonts/lato";
 @import "fg_grid/_fg_grid";
 // @import "_svg-icons";
 // override defaults
@@ -46,7 +46,7 @@ a {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p {
@@ -95,15 +95,19 @@ html {
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.66;
     color: $base;
     font-size: 14px;
+    font-weight: 300;
     @media ($tablet) {
         font-size: 15px;
     }
     @media ($desktop) {
         font-size: 16px;
+    }
+    @media ($desktop) {
+        font-size: 17px;
     }
     display: flex;
     flex-direction: column;
@@ -140,18 +144,18 @@ body {
     }
 }
 
+h1, h2, h3 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
 h1 {
     @include highlightLines(0.5rem, $darkcolor);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
     text-transform: uppercase;
     color: $linkcolor;
-    padding: 0.48rem 0 0.3rem;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    padding: 0.2rem 0 0.33rem;
+    margin-top: 0 0 1.75rem 0;
     font-size: 1.27rem;
-    letter-spacing: 2px;
-    margin-left: 0;
     line-height: 1.6;
     @media ($desktop) {
         line-height: 1.8;
@@ -212,7 +216,7 @@ h1 {
     @media ($desktop) {
         &,
         a {
-            font-size: 0.88rem;
+            font-size: 0.9rem;
         }
     }
 }
@@ -249,10 +253,8 @@ header {
         }
         a {
             display: block;
-            padding: 0.5rem 0.45rem 0.4rem; // background: rgba(black, 0.6); // font-size: 1.04rem;
+            padding: 0.4rem 0.45rem;
             text-transform: uppercase;
-            font-weight: 400;
-            // text-shadow: 0 0 5px rgba(black, 0.75);
             font-size: 0.96rem;
             &:hover {
                 color: white;
@@ -394,13 +396,12 @@ nav {
         color: white;
         font-size: 0.9rem;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         white-space: nowrap;
-        font-weight: 400;
         user-select: none;
         @media ($max-tablet) {
             font-size: 0.75rem;
-            letter-spacing: 0;
+            letter-spacing: 1px;
         }
     }
 }
@@ -433,6 +434,15 @@ img {
     }
 }
 
+.imageLinkHover {
+    backface-visibility: hidden;
+    filter: contrast(106%) brightness(106%) saturate(106%);
+    transition: filter 0.16s;
+    &:hover {
+        filter: contrast(110%) brightness(120%) saturate(120%);
+    }
+}
+
 article {
     break-inside: avoid; // background: #1F232F;
     background: $bgcolor; // background: rgba(black, 0.84);
@@ -445,27 +455,24 @@ article {
     .article-image {
         a {
             display: block;
+            @extend .imageLinkHover;
         }
     }
     h2 {
         position: relative;
         margin: 0 0 1rem;
         font-size: 1.27rem;
-        letter-spacing: 1px;
         line-height: 1.33;
         @media($desktop) {
             font-size: 1.36rem;
         }
         a {
             text-decoration: none;
-            font-family: "Lato", sans-serif;
-            font-weight: 600;
             text-transform: uppercase;
         }
         span {
             color: rgba(white, 0.167);
             display: inline-block;
-            font-weight: 300;
             user-select: none;
         }
         &::after {
@@ -482,7 +489,7 @@ article {
         }
     }
     .description {
-        font-size: 0.94rem;
+        font-size: 0.96rem;
         padding: 1.75rem 2rem 1rem;
         @media ($max-tablet) {
             padding: 1.75rem 1.25rem 0.5rem 1.25rem;
@@ -654,11 +661,11 @@ a[href^="tel:"] {
 .video-player {
     position: relative;
     padding-bottom: 56.23%;
-    /* Use 75% for 4:3 videos */
     height: 0;
     overflow: hidden;
     max-width: 100%;
     background: #000;
+    @extend .imageLinkHover;
     iframe {
         position: absolute;
         top: 0;
@@ -680,7 +687,7 @@ a[href^="tel:"] {
         position: absolute;
         background: $linkcolor url("#{$images}/icons/play.svg") no-repeat;
         background-size: $size $size;
-        border-radius: 50%; // border: 2px solid $darkcolor;
+        border-radius: 50%;
         cursor: pointer;
     }
     img {
@@ -696,9 +703,6 @@ a[href^="tel:"] {
         border: none;
         height: auto;
         cursor: pointer;
-        &:hover {
-            filter: brightness(75%);
-        }
     }
 }
 
@@ -721,21 +725,17 @@ a[href^="tel:"] {
         }
     }
     h3 {
-        font-family: "Lato", sans-serif;
-        font-weight: 600;
         text-transform: uppercase;
         color: $linkcolor;
         font-size: 0.96rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         line-height: 1;
-        letter-spacing: 1px;
         user-select: none;
         @media ($desktop) {
             font-size: 1.1rem;
             margin-top: 1.25rem;
             margin-bottom: 1.25rem;
-            letter-spacing: 2px;
         }
     }
 }
@@ -743,35 +743,42 @@ a[href^="tel:"] {
 .premier-info {
     position: relative;
     background: #0c0d13;
-    padding: 1rem 2rem;
-    margin-left: -2rem;
+    margin-left: -1.25rem;
     margin-bottom: 1.5rem;
     margin-top: 0.84rem;
     font-size: 1rem;
     max-width: 27rem;
+    @media($desktop) {
+        margin-left: -2rem;
+    }
     a {
         display: block;
+        padding: 1rem 2rem;
         text-decoration: none;
         color: white;
-        &:hover {
-            text-decoration: underline;
-        }
     }
     span {
+        display: block;
         position: absolute;
-        text-align: center;
         top: 50%;
+        right: -1rem;
+        margin-top: -12px;
         transform: rotate(270deg);
+        text-align: center;
+        color: $linkcolor;
+        font-size: 0.96rem;
         font-weight: 400;
-        font-size: 0.88rem;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-top: -12px;
         transform-origin: center;
-        right: -1.25rem;
-        display: block;
         user-select: none;
-        color: $linkcolor;
+        pointer-events: none;
+    }
+    &:hover {
+        background: $linkcolor;
+        span {
+            color: rgba(white, 0.42);
+        }
     }
 }
 
@@ -787,9 +794,7 @@ a[href^="tel:"] {
         @media ($mobile) {
             width: 8.66rem;
         }
-        &:hover img {
-            opacity: 0.84;
-        }
+        @extend .imageLinkHover;
     }
     img {
         display: block;
@@ -811,7 +816,7 @@ a[href^="tel:"] {
 }
 
 #menu-toggle {
-    @include hamburger($width: 27px, $thickness: 1px, $gap: 8px, $color: white, $padding: 1rem, $anim: 0);
+    @include hamburger($width: 24px, $thickness: 2px, $gap: 6px, $color: white, $padding: 1.25rem, $anim: 0);
     +label {
         position: fixed;
         top: 0;

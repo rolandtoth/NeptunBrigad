@@ -1,3 +1,4 @@
 /assets/*
   Cache-Control: public, max-age=2592000
   Expires: access plus 1 year
+  FileETag: None

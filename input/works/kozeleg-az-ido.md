@@ -11,7 +11,12 @@
     },
     "link": "http://www.vacidunakanyarszinhaz.hu/line-knutzon-kozeleg-az-ido/",
     "producers": {
-        "Szerző": "Line Knutzon"
+        "Szerző": "Line Knutzon",
+        "Díszlet- és jelmeztervező": "Kálmán Eszter",
+        "Zene": "Herczeg Tamás",
+        "Rendezőasszisztens": "Záhonyi Enikő",
+        "Produkciós vezető": "Gáspár Anna",
+        "Rendező": "Felhőfi-Kiss László"
     },
     "actors": {
         "Rebekka": "Szalontay Tünde",
@@ -19,12 +24,7 @@
         "John, a volt férje": "Molnár Csaba",
         "Ingrid, John felesége": "Cseh Judit",
         "Oda": "Gáspár Anna",
-        "Knuttebarn": "Róbert Gábor",
-        "Díszlet- és jelmeztervező": "Kálmán Eszter",
-        "Zene": "Herczeg Tamás",
-        "Rendezőasszisztens": "Záhonyi Enikő",
-        "Produkciós vezető": "Gáspár Anna",
-        "Rendező": "Felhőfi-Kiss László"
+        "Knuttebarn": "Róbert Gábor"
     },
     "genre": "Abszurd komédia",
     "gallery": "kozeleg-az-ido",

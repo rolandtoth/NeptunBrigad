@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         v = document.getElementsByClassName("video-player");
 
     for (n = 0; n < v.length; n++) {
-
         var $el = v[n];
 
         id = $el.getAttribute("data-video-id");
@@ -14,14 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
         thumb = $el.getAttribute("data-video-thumb");
         thumbUrl = '/assets/images/video-thumbs/' + service + '-' + (thumb ? thumb : id) + '.jpg';
 
+        $el.setAttribute("style", "background-image:url('" + thumbUrl.toLowerCase() + "')");
+
         div = document.createElement("div");
         div.setAttribute("data-video-id", id);
         div.setAttribute("data-video-service", service);
-        div.innerHTML = '<img data-src="' + thumbUrl.toLowerCase() + '" class="lazyload"/><div class="play"></div>';
+        div.innerHTML = '<div class="play"></div>';
 
         $el.appendChild(div);
 
-        div.onclick = labnolIframe;
+        div.querySelector(".play").onclick = labnolIframe;
     }
 
     loadAsset(scriptsDir + 'baguettebox/baguettebox.min.css?selector=".gallery"&async=true', function () {
@@ -49,9 +50,10 @@ function labnolIframe() {
      * todo 
      * add mute, play-inline attributes to autostart on mobile
      */
-    var iframe = document.createElement("iframe"),
-        service = this.getAttribute("data-video-service"),
-        id = this.getAttribute("data-video-id"),
+    var parent = this.parentElement,
+        iframe = document.createElement("iframe"),
+        service = parent.getAttribute("data-video-service"),
+        id = parent.getAttribute("data-video-id"),
         embedYoutube = "https://www.youtube.com/embed/ID?rel=0&autoplay=1",
         embedVimeo = "https://player.vimeo.com/video/ID?rel=0&autoplay=1&color=c82417",
         embedFacebook = "https://www.facebook.com/plugins/video.php?href=ID&show_text=0",
@@ -75,7 +77,6 @@ function labnolIframe() {
 }
 
 function loadAsset(path, callback, o) {
-
     var selector = getUrlParameter('selector', path).replace(/['"]+/g, '').trim(),
         async = getUrlParameter('async', path) === 'true',
             assetType = 'js',

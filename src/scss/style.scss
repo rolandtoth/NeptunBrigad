@@ -664,7 +664,10 @@ a[href^="tel:"] {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #000;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     @extend .imageLinkHover;
     iframe {
         position: absolute;
@@ -676,8 +679,7 @@ a[href^="tel:"] {
         background: transparent;
     }
     .play {
-        pointer-events: none;
-        $size: 3.25rem;
+        $size: 3.5rem;
         height: $size;
         width: $size;
         left: 50%;
@@ -688,20 +690,6 @@ a[href^="tel:"] {
         background: $linkcolor url("#{$images}/icons/play.svg") no-repeat;
         background-size: $size $size;
         border-radius: 50%;
-        cursor: pointer;
-    }
-    img {
-        bottom: 0;
-        display: block;
-        left: 0;
-        margin: auto;
-        max-width: 100%;
-        width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: none;
-        height: auto;
         cursor: pointer;
     }
 }

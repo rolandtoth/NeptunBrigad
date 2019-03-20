@@ -25,7 +25,8 @@
         {%- endif %}
         <script>document.querySelector('html').classList.remove('no-js');</script>
         <link rel="stylesheet" href="{{ cfg.css | url | cacheVersion }}"/>
-        {% include "favicon.njk" %}
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon.png" | cacheVersion }}">
+        <meta name="theme-color" content="#1B1F24">
     </head>
     <body class="{% if page.fileSlug !== '' %}{{ page.fileSlug }}{% else %}home{% endif %}">
         <input type="checkbox" id="menu-toggle" />

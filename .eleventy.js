@@ -24,17 +24,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy(".htaccess");
-
-  eleventyConfig.addPassthroughCopy("android-chrome-192x192.png");
-  eleventyConfig.addPassthroughCopy("android-chrome-256x256.png");
-  eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
-  eleventyConfig.addPassthroughCopy("browserconfig.xml");
-  eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("favicon-16x16.png");
-  eleventyConfig.addPassthroughCopy("favicon-32x32.png");
-  eleventyConfig.addPassthroughCopy("mstile-150x150.png");
-  eleventyConfig.addPassthroughCopy("safari-pinned-tab.svg");
-  eleventyConfig.addPassthroughCopy("site.webmanifest");
+  eleventyConfig.addPassthroughCopy("favicon.png");
 
   eleventyConfig.addCollection("work", function (collection) {
     return collection.getFilteredByTag("work").sort(function (a, b) {

@@ -1,5 +1,10 @@
+// out: ../../input/includes/style.min.css, compress: true, sourceMap: false, autoprefixer: last 3 versions, groupmedia: true
 // out: ../../assets/styles/style.min.css, compress: true, sourceMap: false, autoprefixer: last 3 versions, groupmedia: true
+
+// note: if the minified CSS has "}#id" then nunjucks include fails
+
 // variables
+@charset "UTF-8";
 $version: "?v=20180902";
 $base: #2c3235;
 $linkcolor: #c82417;
@@ -27,10 +32,8 @@ $max-hd: "max-width: #{$_xhd - 1}px";
 @import "_normalize";
 @import "_mixins";
 @import "_sharingbuttons";
-// @import "fonts/raleway";
-// @import "fonts/lato";
 @import "fg_grid/_fg_grid";
-// @import "_svg-icons";
+
 // override defaults
 * {
     outline: none;
@@ -928,12 +931,12 @@ body.kapcsolat {
     }
 }
 
-#text-toggle {
+input#text-toggle {
     display: none;
 }
 
 @media($max-mobile) {
-    #text-toggle {
+    input#text-toggle {
         +.work-body {
             position: relative;
             &::after {
@@ -991,7 +994,7 @@ body.kapcsolat {
             color: rgba(white, 0.75);
             border-radius: 100%;
             position: absolute;
-            top: 0;
+            top: -4px;
             left: 50%;
             line-height: $size;
             transform: translate3d(-50%, -50%, 0);

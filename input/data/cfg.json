@@ -4,7 +4,6 @@
     "domain": "https://neptunbrigad.hu",
     "developerUrl": "https://rolandtoth.hu",
     "phone": "+36 70 6100 564",
-    "css": "/assets/styles/style.min.css",
     "scripts": [
         "/assets/scripts/lazysizes.min.js",
         "/assets/scripts/main.min.js"

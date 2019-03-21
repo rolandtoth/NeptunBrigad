@@ -9,7 +9,7 @@
     "imgMin": "node scripts/imgMin"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.5.3",
+    "@11ty/eleventy": "^0.7.1",
     "del": "^3.0.0",
     "get-video-id": "^3.1.0",
     "glob": "^7.1.3",

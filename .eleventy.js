@@ -1,8 +1,6 @@
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
-
-  // Add a date formatter filter to Nunjucks
   eleventyConfig.addFilter("dateDisplay", require("./filters/dateDisplay.js"));
   eleventyConfig.addFilter("timestamp", require("./filters/timestamp.js"));
   eleventyConfig.addFilter("squash", require("./filters/squash.js"));
@@ -14,7 +12,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("embedVideo", require("./filters/embedVideo.js"));
   eleventyConfig.addFilter("renderGalleryItems", require("./filters/renderGalleryItems.js"));
   eleventyConfig.addFilter("getPageByPath", require("./filters/getPageByPath.js"));
-  // eleventyConfig.addFilter("valueIfEmpty", require("./filters/valueIfEmpty.js"));
   eleventyConfig.addFilter("httpUrl", require("./filters/httpUrl.js"));
   eleventyConfig.addFilter("callFunction", require("./filters/callFunction.js"));
   eleventyConfig.addFilter("getImageVariation", require("./filters/getImageVariation.js"));
@@ -35,10 +32,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("critic", function (collection) {
     return collection.getFilteredByTag("critic");
   });
-
-  // eleventyConfig.addCollection("work", function (collection) {
-  //   return collection.getFilteredByGlob(["works/*.md"]);
-  // });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath.endsWith(".html")) {

@@ -1,11 +1,8 @@
-// out: ../../input/includes/style.min.css, compress: true, sourceMap: false, autoprefixer: last 3 versions, groupmedia: true
-// out: ../../assets/styles/style.min.css, compress: true, sourceMap: false, autoprefixer: last 3 versions, groupmedia: true
-
 // note: if the minified CSS has "}#id" then nunjucks include fails
 
 // variables
 @charset "UTF-8";
-$version: "?v=20180902";
+$version: "?v=20190331a";
 $base: #2c3235;
 $linkcolor: #c82417;
 $darkcolor: #0a101d;
@@ -13,6 +10,7 @@ $bgcolor: rgba(31, 33, 44, 1);
 $bordercolor: #dadada;
 $mutedWhite: rgba(white, 0.5);
 $images: "/assets/images";
+
 // breakpoints
 $_mobile: 480;
 $_tablet: 640;
@@ -28,11 +26,12 @@ $max-mobile: "max-width: #{$_tablet - 1}px";
 $max-tablet: "max-width: #{$_desktop - 1}px";
 $max-desktop: "max-width: #{$_hd - 1}px";
 $max-hd: "max-width: #{$_xhd - 1}px";
+
 // imports
-@import "_normalize";
-@import "_mixins";
-@import "_sharingbuttons";
-@import "fg_grid/_fg_grid";
+@import "normalize";
+@import "mixins";
+@import "sharingbuttons";
+@import "fg_grid/fg_grid";
 
 // override defaults
 * {
@@ -794,7 +793,7 @@ a[href^="tel:"] {
     }
 }
 
-#baguetteBox-overlay {
+div#baguetteBox-overlay {
     background-color: darken($darkcolor, 5%) !important;
     transition: none !important;
 }
@@ -806,7 +805,7 @@ a[href^="tel:"] {
     }
 }
 
-#menu-toggle {
+input#menu-toggle {
     @include hamburger($width: 24px, $thickness: 2px, $gap: 6px, $color: white, $padding: 1.25rem, $anim: 0);
     +label {
         position: fixed;

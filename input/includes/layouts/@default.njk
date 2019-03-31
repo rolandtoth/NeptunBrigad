@@ -6,7 +6,7 @@
         <title>{{ title | pageTitle}}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
-        <meta name="theme-color" content="#0a0d12">
+        <meta name="theme-color" content="{{ cfg.themeColor }}">
         <meta name="msapplication-tap-highlight" content="no">
         <meta property="og:type" content="website">
         <meta property="og:title" content="{{ title }}">
@@ -24,9 +24,7 @@
             <meta property="og:image:height" content="630">
         {%- endif %}
         <script>document.querySelector('html').classList.remove('no-js');</script>
-        {% set styles %}
-            {% include "style.min.css" %}
-        {% endset %}
+        {%- set styles %}{% include "style.css" %}{% endset -%}
         <style>{{ styles | safe }}</style>
         <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon.png" | cacheVersion }}">
         <meta name="theme-color" content="#1B1F24">

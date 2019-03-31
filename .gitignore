@@ -1,3 +1,5 @@
 node_modules
 dist
 package-lock.json
+input/includes/style.css
+assets/styles/main.js

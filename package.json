@@ -9,7 +9,7 @@
     "imgMin": "node scripts/imgMin",
     "build:css": "node-sass --include-path src/scss/includes src/scss/style.scss | postcss --use autoprefixer -b \"last 2 versions\" --use cssnano --no-map > input/includes/style.css",
     "lint": "jshint src/js/main.js",
-    "build:js": "uglifyjs src/js/main.js > assets/scripts/main.min.js",
+    "build:js": "uglifyjs src/js/main.js -o assets/scripts/main.js",
     "build": "npm run build:css && npm run build:js",
     "prebuild:js": "npm run lint",
     "watch:css": "onchange \"src/scss/*.scss\" -- npm run build:css",

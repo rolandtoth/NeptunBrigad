@@ -6,7 +6,7 @@
     "phone": "+36 70 6100 564",
     "scripts": [
         "/assets/scripts/lazysizes.min.js",
-        "/assets/scripts/main.min.js"
+        "/assets/scripts/main.js"
     ],
     "logo": "/assets/images/logo-neptunbrigad.svg",
     "favicon": "/assets/images/favicon.ico",

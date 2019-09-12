@@ -1,3 +1,3 @@
 [build]
   publish = "dist"
-  command = "npm run build && npx eleventy"
+  command = "npm run imgResize && npm run imgMin && npm run build && npx eleventy"

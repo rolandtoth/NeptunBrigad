@@ -25,7 +25,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("work", function (collection) {
     return collection.getFilteredByTag("work").sort(function (a, b) {
-      return new Date(b.data.premier.date) - new Date(a.data.premier.date);
+      if (a.data.premier && b.data.premier) {
+        return new Date(b.data.premier.date) - new Date(a.data.premier.date);
+      }
     });
   });
 

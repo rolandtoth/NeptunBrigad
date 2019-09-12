@@ -48,7 +48,7 @@
     {% endfor %}
     </ul>
     {% endif %}
-    {% if premier %}
+    {% if premier and premier.theater %}
     <h3>Bemutató</h3>
     <p class="premier">
         {{ premier.theater }}, {{ premier.date | dateDisplay }} {{ premier.time }}

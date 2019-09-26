@@ -7,7 +7,7 @@
     "premier": {
         "date": "2017-11-10",
         "time": "19:00",
-        "theater": "Játékszín"
+        "theater": "jatekszin"
     },
     "link": "https://www.jatekszin.hu/hirek/hamletman",
     "length": "88 perc",

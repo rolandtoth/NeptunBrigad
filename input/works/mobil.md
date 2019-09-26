@@ -7,7 +7,7 @@
     "premier": {
         "date": "2008-09-27",
         "time": "19:00",
-        "theater": "Gödör Klub"
+        "theater": "godorklub"
     },
     "link": "https://szinhaz.hu/2008/09/26/sergi_belbel_mobil",
     "producers": {

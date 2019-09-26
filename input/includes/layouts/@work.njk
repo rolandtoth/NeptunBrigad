@@ -28,6 +28,32 @@
       </p>
       {% endif %}
     </div>
+
+    {% if events %}
+    <h3>Hol játsszák?</h3>
+    <ul class="events">
+        {% for event in events %}
+        {% set theater = theaters[event.theater] %}
+        <li>
+          <p>
+            {{ event.date | dateDisplay }} {{ event.time }}
+            <br/>
+            <strong>{{ theater.name }}</strong> ({{ theater.address }})
+            <br/>
+            {% if event.links %}
+              <strong>
+              {% for name, url in event.links %}
+                <a href="{{ url }}">{{ name }}</a>
+                <br/>
+              {% endfor %}
+              </strong>
+            {% endif %}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
     {% if actors %}
     <h3>Szereplők</h3>
     <ul class="actors">
@@ -49,10 +75,15 @@
     </ul>
     {% endif %}
     {% if premier and premier.theater %}
-    <h3>Bemutató</h3>
-    <p class="premier">
-        {{ premier.theater }}, {{ premier.date | dateDisplay }} {{ premier.time }}
-    </p>
+      {% set theater = theaters[premier.theater] %}
+      {% if theater %}
+        <h3>Bemutató</h3>
+        <ul class="premier">
+            <li>
+              {{ premier.date | dateDisplay }} {{ premier.time }}, {{ theater.name }}
+            </li>
+        </ul>
+      {% endif %}
     {% endif %}
   </aside>
 

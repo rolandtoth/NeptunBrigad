@@ -7,7 +7,7 @@
     "premier": {
         "date": "2018-05-31",
         "time": "19:30",
-        "theater": "RS9 Színház, Vallai kert"
+        "theater": "rs9"
     },
     "link": "https://www.jegy.hu/program/a-szerecsen-trip-91413",
     "gallery": "trip",
@@ -30,7 +30,18 @@
         "https://vimeo.com/315890617"
     ],
     "length": "100 perc",
-    "genre": "Tragikomédia"
+    "genre": "Tragikomédia",
+    "events": [
+        {
+            "date": "2019-10-22",
+            "time": "19:30",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532/590601",
+                "Facebook": "https://www.facebook.com/events/898884937177455/"
+            }
+        }
+    ]
 }
 ---
 

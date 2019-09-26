@@ -7,7 +7,7 @@
     "premier": {
         "date": "2010-09-24",
         "time": "19:00",
-        "theater": "Manna Produkció"
+        "theater": "mannaprodukcio"
     },
     "link": "http://www.mannaprodukcio.hu/eloadasok/tevedesek-vigjateka/",
     "producers": {

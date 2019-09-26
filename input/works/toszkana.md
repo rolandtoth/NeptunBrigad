@@ -7,7 +7,7 @@
     "premier": {
         "date": "2010-01-03",
         "time": "19:00",
-        "theater": "MU Színház"
+        "theater": "muszinhaz"
     },
     "link": "https://szinhaz.hu/2009/08/31/sergi_belbel_toszkana",
     "producers": {

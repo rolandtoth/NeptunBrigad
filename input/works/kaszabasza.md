@@ -7,7 +7,7 @@
     "premier": {
         "date": "2007-03-19",
         "time": "22:30",
-        "theater": "Sirály"
+        "theater": "siraly"
     },
     "link": "https://szinhaz.hu/2006/11/13/dakota_367",
     "gallery": "kaszabasza",

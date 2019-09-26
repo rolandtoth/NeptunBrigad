@@ -7,7 +7,7 @@
     "premier": {
         "date": "2012-01-24",
         "time": "19:30",
-        "theater": "Új Színház"
+        "theater": "ujszinhaz"
     },
     "link": "https://fidelio.hu/szinhaz/premier-valtsagdij-69178.html",
     "producers": {

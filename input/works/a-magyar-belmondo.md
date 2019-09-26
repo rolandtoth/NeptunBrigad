@@ -7,7 +7,7 @@
     "premier": {
         "date": "2011-10-20",
         "time": "19:30",
-        "theater": "KINO"
+        "theater": "kino"
     },
     "producers": {
         "Szerző": "Baksa Imre",

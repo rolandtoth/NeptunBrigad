@@ -7,7 +7,7 @@
     "premier": {
         "date": "2017-02-26",
         "time": "19:00",
-        "theater": "RS9 Színház"
+        "theater": "rs9"
     },
     "link": "http://rs9.hu/eloadas/de-mi-lett-a-novel/",
     "gallery": "de-mi-lett-a-novel",

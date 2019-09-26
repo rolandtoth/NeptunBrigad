@@ -7,7 +7,7 @@
     "premier": {
         "date": "2006-11-18",
         "time": "20:00",
-        "theater": "Városi Színház"
+        "theater": "varosiszinhaz"
     },
     "link": "https://szinhaz.hu/2006/11/13/dakota_367",
     "producers": {

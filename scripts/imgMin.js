@@ -7,6 +7,7 @@ const imageminPngquant = require("imagemin-pngquant");
 let dirs = [
     "assets/images/works/",
     ...glob.sync("assets/images/gallery/**/"),
+    ...glob.sync("assets/images/critics/**/"),
     ...glob.sync("assets/images/video-thumbs/**/")
 ];
 

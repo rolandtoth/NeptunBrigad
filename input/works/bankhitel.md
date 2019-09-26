@@ -7,7 +7,7 @@
     "premier": {
         "date": "2014-12-11",
         "time": "19:30",
-        "theater": "Sanyi és Aranka színház"
+        "theater": "sanyiesaranka"
     },
     "link": "http://www.sasz.hu/index.php?option=com_content&view=article&id=33&Itemid=9",
     "producers": {

@@ -7,7 +7,7 @@
     "premier": {
         "date": "2008-01-10",
         "time": "19:30",
-        "theater": "Új Színház"
+        "theater": "ujszinhaz"
     },
     "producers": {
         "Rendező": "Baksa Imre",

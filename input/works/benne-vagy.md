@@ -7,28 +7,48 @@
     "premier": {
         "date": "2019-04-10",
         "time": "19:00",
-        "theater": "Jurányi Inkubátorház, Szkéné terem, 1. emelet"
+        "theater": "juranyi"
     },
     "link": "https://www.jegy.hu/program/benne-vagy-102555",
     "producers": {
-        "Produkciós vezető": "Sáfrány Eszter",
-        "Dramaturg": "Róbert Júlia",
-        "Asszisztens": "Solténszky Ráhel",
-        "Látványtervező": "Kovács Dániel Ambrus",
-        "Rendező": "Kovács Dániel Ambrus",
-        "Fotós": "Gulyás Dóra"
+        "produkciós vezető": "Sáfrány Eszter",
+        "dramaturg konzultáns": "Róbert Júlia",
+        "asszisztens": "Rohály Hanna",
+        "látványtervező": "Kovács Dániel Ambrus",
+        "írta és rendezte": "Kovács Dániel Ambrus",
+        "hangbejátszás": "Baksa Imre",
+        "fotók": "Gulyás Dóra"
     },
     "actors": {
         "Cégvezető Roland": "Chován Gábor",
         "Partner Endre": "Jankovics Péter",
-        "Üzlettársa Szilvi": "Messaoudi Emina",
+        "Tulaj Szilvi": "Messaoudi Emina",
         "Akiagépmellettáll Tibi": "Ficzere Béla"
     },
-    "gallery": "benne-vagy"
+    "gallery": "benne-vagy",
+    "events": [
+        {
+            "date": "2019-10-15",
+            "time": "20:00",
+            "theater": "juranyi",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/586852",
+                "Facebook": "https://www.facebook.com/events/1253078131538398/"
+            }
+        },
+        {
+            "date": "2019-11-07",
+            "time": "20:00",
+            "theater": "juranyi",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/599078"
+            }
+        }
+    ]
 }
 ---
 
-Dágvány, napjainkban. Lacibát megütötte a guta. Lánya, Szilvi próbálja tovább vinni a kis lábtörlőgyártó céget, Gépkezelő Tibivel kitermelni legalább a hitelre valót. Roland, „az ügyvezető” a roncs furgonnal teríti a környéken az árut. Aztán összefut Endrével, a kamaszkori haverral, aki megkínálja egy területfejlesztési bombaüzlettel. Roland, aki torkig van, benne van.
+Dágvány, napjainkban. Lacibát megütötte a guta. Lánya, Szilvi próbálja tovább vinni a kis lábtörlőgyártó céget, Gépkezelő Tibivel kitermelni legalább a hitelrevalót. Roland, „az ügyvezető” a roncs furgonnal teríti a környéken az árut. Aztán összefut Endrével, a kamaszkori haverral, aki megkínálja egy területfejlesztési bombaüzlettel. Roland, aki torkig van, benne van.
 
 Az érvényesülés nem csak szakmai, még kevésbé emberi kiválóság kérdése. Mit kell megtennünk, mit kell tudnunk azon túl, hogy jól végezzük a dolgunkat? Milyen képességek kellenek ahhoz, hogy előbbre jussunk? Mikor lesznek az ábrándos kamaszokból cinikus középvezetők? Idealistákból törtetők? És mi lesz azokkal a szintén tehetségesekkel, rátermettekkel, akiknek nem sikerül? Mi legyen a szelídekkel? Mi legyen a tisztességesekkel?
 

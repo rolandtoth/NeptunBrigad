@@ -1,0 +1,67 @@
+{
+    "juranyi": {
+        "name": "Jurányi Ház",
+        "address": "1027 Budapest, Jurányi utca 1.",
+        "url": "http://juranyihaz.hu/"
+    },
+    "rs9": {
+        "name": "RS9 Színház",
+        "address": "1075 Budapest, Rumbach Sebestyén u. 9.",
+        "url": "https://rs9.hu/"
+    },
+    "ujszinhaz": {
+        "name": "Újszínház",
+        "address": "1061 Budapest, Paulay Ede utca 35.",
+        "url": "https://ujszinhaz.hu/"
+    },
+    "kino": {
+        "name": "Kino Cafe Mozi",
+        "address": "1137 Budapest, XIII. kerület, Szent István körút 16.",
+        "url": "http://kinocafemozi.hu/"
+    },
+    "sanyiesaranka": {
+        "name": "Sanyi és Aranka Színház",
+        "address": "1093 Budapest, Mátyás utca 9.",
+        "url": "https://www.facebook.com/sanyies.arankaszinhaz"
+    },
+    "varosiszinhaz": {
+        "name": "Városi Színház",
+        "address": "1052 Budapest, Szervita tér 5.",
+        "url": "http://varosiszinhaz.hu/"
+    },
+    "jatekszin": {
+        "name": "Játékszín",
+        "address": "1066 Budapest, Teréz krt. 48.",
+        "url": "https://www.jatekszin.hu/"
+    },
+    "vacidunakanyarszinhaz": {
+        "name": "Váci Dunakanyar Színház",
+        "address": "2600 Vác Dr. Csányi László körút 58.",
+        "url": "http://www.vacidunakanyarszinhaz.hu/"
+    },
+    "godorklub": {
+        "name": "Gödör Klub",
+        "address": "1061 Budapest VI., Király utca 8-10",
+        "url": "http://www.godorklub.hu/"
+    },
+    "mannaprodukcio": {
+        "name": "Manna Produkció",
+        "address": "1590 Budapest, Pf. 200.",
+        "url": "http://www.mannaprodukcio.hu/"
+    },
+    "muszinhaz": {
+        "name": "MU Színház",
+        "address": "1117 Budapest, Kőrösy József u. 17.",
+        "url": "http://www.mu.hu/"
+    },
+    "zsambekiszinhazibazis": {
+        "name": "Zsámbéki Színházi Bázis",
+        "address": "2072 Zsámbék, Szent István tér 3.",
+        "url": "http://zsambekiszinhaz.hu/"
+    },
+    "siraly": {
+        "name": "Sirály",
+        "address": "1065 Budapest, Király u. 50.",
+        "url": "http://www.siraly.co.hu/"
+    }
+}

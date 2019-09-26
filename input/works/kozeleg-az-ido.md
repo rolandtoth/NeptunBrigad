@@ -7,7 +7,7 @@
     "premier": {
         "date": "2013-10-26",
         "time": "19:00",
-        "theater": "Váci Dunakanyar Színház"
+        "theater": "vacidunakanyarszinhaz"
     },
     "link": "http://www.vacidunakanyarszinhaz.hu/line-knutzon-kozeleg-az-ido/",
     "producers": {

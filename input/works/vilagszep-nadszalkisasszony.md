@@ -7,7 +7,7 @@
     "premier": {
         "date": "2009-06-27",
         "time": "19:00",
-        "theater": "Színházi Bázis"
+        "theater": "zsambekiszinhazibazis"
     },
     "link": "https://www.jegy.hu/program/vilagszep-nadszalkisasszony-55976",
     "producers": {

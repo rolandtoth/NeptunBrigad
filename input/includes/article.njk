@@ -1,18 +1,26 @@
-<article data-premier-date="{{ (page.data.premier.date + ' ' + page.data.premier.time + ':00') | dateDisplay('timestamp') }}">
+{# {% set nextEvents = events[(page.fileSlug)] %} #}
+<article {% if nextEvents %}data-has-events{% endif %} data-premier-date="{{ (page.data.premier.date + ' ' + page.data.premier.time + ':00') | dateDisplay('timestamp') }}">
 {% if page.data.img %}
     {% set imgLarge = page.data.img | postImage("works") %}
     {% set imgThumb = page.data.img | postImage("works", "thumb") %}
-    {% set imgLQP = page.data.img | postImage("works", "lqp") %}
     <div class="article-image">
      <a href="{{ page.url | url }}"{% if loop.index === 1 %} style="background-image: url('{{ imgLarge | url }}');"{% endif %} title="">
         {% if loop.index > 1 %}
-            <img src="{{ imgLQP | url | cacheVersion }}" data-src="{{ imgThumb | url | cacheVersion }}" class="lazyload" {{ imgThumb | imageDimensions | safe }} alt=""/>
+            <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
         {% endif %}
-        <noscript>
-            <img src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
-        </noscript>
      </a>
     </div>
+    {% if nextEvents %}
+        {% set event = nextEvents[0] %}
+        <div class="next-event">
+            {% set theater = theaters[event.theater] %}
+            <a href="{{ page.url | url }}#eloadasok">
+                <strong>{{ event.date | dateDisplay("monthAndDay") }} {{ event.time }}</strong>
+                <br/>
+                {{ theater.name }}
+            </a>
+        </div>
+    {% endif %}
 {% endif %}
     <div class="description">
         <h2>

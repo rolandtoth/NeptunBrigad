@@ -25,26 +25,7 @@
         "Tulaj Szilvi": "Messaoudi Emina",
         "Akiagépmellettáll Tibi": "Ficzere Béla"
     },
-    "gallery": "benne-vagy",
-    "events": [
-        {
-            "date": "2019-10-15",
-            "time": "20:00",
-            "theater": "juranyi",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/586852",
-                "Facebook": "https://www.facebook.com/events/1253078131538398/"
-            }
-        },
-        {
-            "date": "2019-11-07",
-            "time": "20:00",
-            "theater": "juranyi",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/599078"
-            }
-        }
-    ]
+    "gallery": "benne-vagy"
 }
 ---
 

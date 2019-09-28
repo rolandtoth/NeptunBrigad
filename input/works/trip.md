@@ -30,18 +30,7 @@
         "https://vimeo.com/315890617"
     ],
     "length": "100 perc",
-    "genre": "Tragikomédia",
-    "events": [
-        {
-            "date": "2019-10-22",
-            "time": "19:30",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532/590601",
-                "Facebook": "https://www.facebook.com/events/898884937177455/"
-            }
-        }
-    ]
+    "genre": "Tragikomédia"
 }
 ---
 

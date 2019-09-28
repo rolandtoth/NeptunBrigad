@@ -12,9 +12,19 @@
 <section class="articles">
   <h2 class="hidden">Darabok</h2>
   <div>
+  {% set nextEventsTitleWasShown = false %}
+  {% set wasAnyPostWithNextEvents = false %}
   {% for page in collections.work %}
     {% if loop.index === 2 %}
     <div class="masonry">
+    {% endif %}
+    {% set nextEvents = events[(page.fileSlug)] %}
+    {% if nextEvents %}
+        {% set wasAnyPostWithNextEvents = true %}
+    {% endif %}
+    {% if not nextEvents and nextEventsTitleWasShown === false and wasAnyPostWithNextEvents %}
+        {% set nextEventsTitleWasShown = true %}
+        <h2 class="previous-events-title">Korábbi előadások</h2>
     {% endif %}
     {% include "article.njk" %}
   {% endfor %}

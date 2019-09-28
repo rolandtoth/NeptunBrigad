@@ -37,12 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-
-    // lazysizes
-    // window.lazySizesConfig = window.lazySizesConfig || {};
-    // lazySizesConfig.loadMode = 3;
-    // lazySizesConfig.expand = 1000;
-
 });
 
 function labnolIframe() {

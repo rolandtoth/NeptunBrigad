@@ -29,10 +29,11 @@
       {% endif %}
     </div>
 
-    {% if events %}
-    <h3>Hol játsszák?</h3>
+    {% set nextEvents = events[page.fileSlug] %}
+    {% if nextEvents %}
+    <h3 id="eloadasok">Hol játszuk?</h3>
     <ul class="events">
-        {% for event in events %}
+        {% for event in nextEvents %}
         {% set theater = theaters[event.theater] %}
         <li>
           <p>

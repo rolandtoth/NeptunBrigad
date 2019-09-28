@@ -67,12 +67,14 @@ li p {
 img {
     height: auto;
     max-width: 100%;
+
     @media ($tablet) {
         &.align-right {
             float: right;
             max-width: 66%;
             margin: 0 0 1rem 1.5rem;
         }
+
         &.align-left {
             max-width: 66%;
             float: left;
@@ -84,6 +86,7 @@ img {
 a {
     color: $linkcolor;
     text-decoration: underline;
+
     &:hover {
         color: lighten($linkcolor, 10%);
     }
@@ -102,18 +105,23 @@ body {
     color: $base;
     font-size: 14px;
     font-weight: 300;
+
     @media ($tablet) {
         font-size: 15px;
     }
+
     @media ($desktop) {
         font-size: 16px;
     }
+
     @media ($desktop) {
         font-size: 17px;
     }
+
     display: flex;
     flex-direction: column;
     height: 100%;
+
     &::after {
         content: "";
         position: absolute;
@@ -126,6 +134,7 @@ body {
         background: $darkcolor url("#{$images}/bg-mobile.jpg") center top no-repeat;
         background-size: 100% auto;
         opacity: 0.8;
+
         @media ($desktop) {
             position: fixed;
             background-image: url("#{$images}/bg.jpg");
@@ -137,16 +146,20 @@ body {
     @include clearfix;
     margin: 0 auto;
     padding: 0 1.12rem;
+
     @media ($desktop) {
         max-width: 80rem;
         padding: 0 2rem;
     }
+
     @media ($hd) {
         padding: 0 3rem;
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
@@ -159,18 +172,28 @@ h1 {
     margin-top: 0 0 1.75rem 0;
     font-size: 1.27rem;
     line-height: 1.6;
+
     @media ($desktop) {
         line-height: 1.8;
         font-size: 1.7rem;
     }
 }
 
+.previous-events-title {
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $linkcolor;
+}
+
 .title {
     @include clearfix;
     margin-bottom: 0.5rem;
+
     @media ($desktop) {
         margin-bottom: 1.25rem;
     }
+
     body.home & {
         display: none;
     }
@@ -180,8 +203,10 @@ h1 {
     list-style: none;
     padding-left: 0;
     display: inline-block;
+
     li {
         margin-bottom: 0.25rem;
+
         a {
             $size: 1.5rem;
             display: inline-block;
@@ -190,6 +215,7 @@ h1 {
             background: transparent url("#{$images}/icons/icon-document.svg") 0 0.5rem no-repeat;
             background-size: $size $size;
             color: #fff;
+
             &:hover {
                 color: $linkcolor;
             }
@@ -203,19 +229,24 @@ h1 {
 
 .headline-copy {
     margin-top: -0.84rem;
+
     &,
     a {
         color: rgba(white, 0.6);
         text-decoration: none;
         font-size: 0.84rem;
     }
+
     a:hover {
         text-decoration: underline;
     }
+
     article & {
         color: rgba(white, 0.3) !important;
     }
+
     @media ($desktop) {
+
         &,
         a {
             font-size: 0.9rem;
@@ -228,24 +259,31 @@ header {
     padding: 2rem 0 1.5rem;
     position: relative;
     z-index: 120;
+
     @media ($tablet) {
         padding-bottom: 1.75rem;
     }
+
     @media ($desktop) {
         padding-top: 3.175rem;
         padding-bottom: 2.5rem;
     }
+
     nav {
         float: right;
+
         @media ($tablet) {
             margin-top: 1.25em;
         }
+
         @media ($max-tablet) {
             display: none;
         }
+
         li {
             display: inline-block;
             margin-left: 0.25rem;
+
             &.active {
                 a {
                     background: $linkcolor;
@@ -253,11 +291,13 @@ header {
                 }
             }
         }
+
         a {
             display: block;
             padding: 0.4rem 0.45rem;
             text-transform: uppercase;
             font-size: 0.96rem;
+
             &:hover {
                 color: white;
                 background: $bgcolor;
@@ -278,6 +318,7 @@ footer {
         list-style: none;
         margin: 0;
         padding: 0;
+
         a {
             text-decoration: none;
             color: white;
@@ -291,21 +332,27 @@ footer {
     flex: 0 0 auto;
     margin-top: 2rem;
     margin-bottom: 1rem;
+
     >.container>div {
         border-top: 1px solid rgba(white, 0.33);
         padding-top: 1rem;
     }
+
     nav {
         margin-bottom: 1rem;
     }
+
     li {
         display: inline-block;
+
         &:not(:last-child) {
             margin-right: 1rem;
         }
+
         &.icon-only {
             a {
                 top: 2px !important;
+
                 img {
                     width: 16px;
                     height: 16px;
@@ -313,32 +360,40 @@ footer {
             }
         }
     }
+
     ul {
         a {
             display: inline-block;
             font-size: 0.94rem;
             color: rgba(white, 0.5);
+
             &:hover {
                 color: white;
             }
         }
     }
+
     nav:first-child {
         display: none;
+
         @media ($tablet) {
             display: block;
         }
     }
+
     @media ($desktop) {
         nav:first-child {
             float: left;
         }
+
         nav~nav {
             float: right;
         }
     }
+
     nav~nav {
         margin-top: -0.2rem;
+
         img {
             height: 2.4rem;
             width: auto;
@@ -348,10 +403,12 @@ footer {
 
 nav {
     user-select: none;
+
     li.icon-only {
         a {
             position: relative;
             top: 4px;
+
             &:hover {
                 background: transparent;
                 opacity: 0.75;
@@ -364,9 +421,11 @@ nav {
     float: left;
     clear: left;
     margin: -0.75rem 0 0;
+
     a {
         color: rgba(white, 0.1);
         font-size: 0.75rem;
+
         &:not(:hover) {
             text-decoration: none;
         }
@@ -380,20 +439,25 @@ nav {
     float: left;
     text-decoration: none;
     user-select: none;
+
     @media ($tablet) {
         width: 15rem;
     }
+
     @media ($desktop) {
         width: 17rem;
     }
+
     @media ($hd) {
         width: 20rem;
     }
+
     img {
         min-width: 4rem;
         display: block;
         margin-bottom: 0.3rem;
     }
+
     span {
         color: white;
         font-size: 0.9rem;
@@ -401,6 +465,7 @@ nav {
         letter-spacing: 2px;
         white-space: nowrap;
         user-select: none;
+
         @media ($max-tablet) {
             font-size: 0.75rem;
             letter-spacing: 1px;
@@ -414,9 +479,11 @@ img {
 
 .readmore {
     display: none;
+
     @media ($tablet) {
         display: inline-block;
     }
+
     $size: 1rem;
     $outerSize: $size * 2;
     $offset: -0.33rem;
@@ -428,9 +495,11 @@ img {
     text-decoration: none;
     opacity: 0.84;
     user-select: none;
+
     span {
         display: none;
     }
+
     &:hover {
         opacity: 0.99;
     }
@@ -440,43 +509,52 @@ img {
     backface-visibility: hidden;
     filter: contrast(106%) brightness(106%) saturate(106%);
     transition: filter 0.16s;
+
     &:hover {
         filter: contrast(110%) brightness(120%) saturate(120%);
     }
 }
 
 article {
-    break-inside: avoid; // background: #1F232F;
     background: $bgcolor; // background: rgba(black, 0.84);
     margin-bottom: 1rem;
     position: relative;
-    display: inline-block; // IE11 hack
+
     p:last-child {
         margin-bottom: 0;
     }
+
     .article-image {
+        position: relative;
+        overflow: hidden;
+
         a {
             display: block;
             @extend .imageLinkHover;
         }
     }
+
     h2 {
         position: relative;
         margin: 0 0 1rem;
         font-size: 1.27rem;
         line-height: 1.33;
+
         @media($desktop) {
             font-size: 1.36rem;
         }
+
         a {
             text-decoration: none;
             text-transform: uppercase;
         }
+
         span {
             color: rgba(white, 0.167);
             display: inline-block;
             user-select: none;
         }
+
         &::after {
             content: "";
             width: 60px;
@@ -485,21 +563,26 @@ article {
             top: -1.75rem;
             left: -2rem;
             background-color: $linkcolor;
+
             @media ($max-tablet) {
                 left: -1.25rem;
             }
         }
     }
+
     .description {
         font-size: 0.96rem;
         padding: 1.75rem 2rem 1rem;
+
         @media ($max-tablet) {
             padding: 1.75rem 1.25rem 0.5rem 1.25rem;
         }
+
         p {
             color: rgba(white, 0.84);
         }
     }
+
     img {
         display: block;
         width: 100%;
@@ -513,14 +596,36 @@ article {
     }
 }
 
+.next-event {
+    position: absolute;
+    top: 0.75rem;
+    left: -0.2rem;
+    display: inline-block;
+
+    a {
+        display: block;
+        background: $linkcolor;
+        padding: 0.25rem 0.5rem 0.25rem 1rem;
+        font-size: 0.94rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            background: darken($linkcolor, 10%);
+        }
+    }
+}
+
 .critic {
     margin-bottom: 1.5rem;
+
     blockquote {
         font-style: italic;
         padding: 0 0 0 0.66rem;
         margin: 0;
         font-size: 1.04rem;
         position: relative;
+
         &::before {
             content: '"';
             position: absolute;
@@ -530,6 +635,7 @@ article {
             color: rgba(white, 0.5);
             user-select: none;
         }
+
         p {
             margin-bottom: 0.5rem;
         }
@@ -539,6 +645,7 @@ article {
 section.articles {
     >div>article:first-child {
         display: block;
+
         .article-image {
             a {
                 display: block;
@@ -567,14 +674,17 @@ section.articles {
     section.articles {
         >div>article:first-child {
             @include clearfix;
+
             .article-image {
                 float: left;
                 width: 67.5%;
                 margin-right: 2rem;
+
                 a {
                     min-height: 30rem;
                 }
             }
+
             .description {
                 top: 50%;
                 position: absolute;
@@ -582,15 +692,19 @@ section.articles {
                 transform: translateY(-50%);
                 margin-left: calc(67.5% + 2rem);
             }
+
             h2 {
                 font-size: 1.84rem;
+
                 &::after {
                     left: 0;
                 }
             }
+
             .excerpt {
                 font-size: 1.04rem;
             }
+
             .premier-info {
                 margin-left: -2rem;
             }
@@ -614,12 +728,26 @@ a[href^="tel:"] {
 .masonry {
     @include clearfix;
     color: white;
+
     @media ($tablet) {
-        column-count: 2;
-        column-gap: 1rem;
+        @include _fg(2, 1rem, 0);
+
+        .article-image {
+
+            height: 0;
+            padding-top: 60%;
+
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+        }
     }
+
     @media ($desktop) {
-        column-count: 3;
+        @include _fg(3, 1rem, 0);
     }
 }
 
@@ -643,11 +771,14 @@ a[href^="tel:"] {
     ::-webkit-scrollbar {
         width: 6px;
         height: 6px;
+
         &-track {
             background: transparent;
         }
+
         &-thumb {
             background: $linkcolor;
+
             &:hover {
                 background: lighten($linkcolor, 10%);
             }
@@ -671,6 +802,7 @@ a[href^="tel:"] {
     background-size: cover;
     background-position: center;
     @extend .imageLinkHover;
+
     iframe {
         position: absolute;
         top: 0;
@@ -680,6 +812,7 @@ a[href^="tel:"] {
         z-index: 100;
         background: transparent;
     }
+
     .play {
         $size: 3.5rem;
         height: $size;
@@ -698,22 +831,25 @@ a[href^="tel:"] {
 
 .work-details {
     @include clearfix;
+
     aside {
         word-break: break-word;
     }
+
     @media ($desktop) {
-        @include _fg(3 4,
-        0,
-        0);
+        @include _fg(3 4, 0, 0);
+
         aside {
             padding-right: 3rem;
         }
     }
+
     section {
         >div {
             @include clearfix;
         }
     }
+
     h3 {
         text-transform: uppercase;
         color: $linkcolor;
@@ -722,6 +858,7 @@ a[href^="tel:"] {
         margin-bottom: 1rem;
         line-height: 1;
         user-select: none;
+
         @media ($desktop) {
             font-size: 1.1rem;
             margin-top: 1.25rem;
@@ -738,15 +875,18 @@ a[href^="tel:"] {
     margin-top: 0.84rem;
     font-size: 1rem;
     max-width: 27rem;
+
     @media($desktop) {
         margin-left: -2rem;
     }
+
     a {
         display: block;
         padding: 1rem 2rem;
         text-decoration: none;
         color: white;
     }
+
     span {
         display: block;
         position: absolute;
@@ -764,8 +904,10 @@ a[href^="tel:"] {
         user-select: none;
         pointer-events: none;
     }
+
     &:hover {
         background: $linkcolor;
+
         span {
             color: rgba(white, 0.42);
         }
@@ -775,17 +917,21 @@ a[href^="tel:"] {
 .gallery {
     @include clearfix;
     margin-left: -0.25rem;
+
     a {
         display: block;
         float: left;
         width: calc(50% - 0.5rem);
         margin: 0 0.25rem 0.5rem;
         background: $darkcolor;
+
         @media ($mobile) {
             width: 8.66rem;
         }
+
         @extend .imageLinkHover;
     }
+
     img {
         display: block;
         width: 100%;
@@ -800,6 +946,7 @@ div#baguetteBox-overlay {
 
 .baguetteBox-button {
     background-color: transparent !important;
+
     &:hover {
         filter: brightness(150%);
     }
@@ -807,17 +954,20 @@ div#baguetteBox-overlay {
 
 input#menu-toggle {
     @include hamburger($width: 24px, $thickness: 2px, $gap: 6px, $color: white, $padding: 1.25rem, $anim: 0);
+
     +label {
         position: fixed;
         top: 0;
         right: 0;
         backface-visibility: hidden;
     }
+
     @media ($desktop) {
         &:not(:checked)+label {
             display: none;
         }
     }
+
     &:checked {
         ~header {
             >.container {
@@ -833,6 +983,7 @@ input#menu-toggle {
                 margin: 0;
                 background: $darkcolor;
             }
+
             .logo {
                 float: none;
                 z-index: 210;
@@ -840,24 +991,29 @@ input#menu-toggle {
                 margin-top: 7rem;
                 text-align: center;
             }
+
             nav {
                 display: block;
             }
+
             ul {
                 margin: 0 auto;
                 position: absolute;
                 top: 13rem;
                 left: 0;
                 right: 0;
+
                 @media ($desktop) {
                     top: 14rem;
                 }
             }
+
             li {
                 display: block;
                 margin-bottom: 0.5rem;
                 margin-left: 0;
             }
+
             a {
                 font-size: 1rem;
                 line-height: 1.25;
@@ -870,6 +1026,7 @@ input#menu-toggle {
 .contact-grid {
     padding-top: 1rem;
     border-top: 1px solid rgba(white, 0.33);
+
     h3 {
         color: $linkcolor;
         margin-bottom: 0;
@@ -896,6 +1053,7 @@ input#menu-toggle {
 
 .sharingbuttons {
     margin-left: -0.25rem;
+
     @media($desktop) {
         display: inline-block;
         margin-left: 2rem;
@@ -938,6 +1096,7 @@ input#text-toggle {
     input#text-toggle {
         +.work-body {
             position: relative;
+
             &::after {
                 content: "";
                 background-image: linear-gradient(to bottom, transparent, $darkcolor);
@@ -948,18 +1107,21 @@ input#text-toggle {
                 bottom: 0;
             }
         }
+
         &:not(:checked) {
             +.work-body {
                 max-height: 8rem;
                 overflow: hidden;
             }
         }
+
         &:checked {
             ~p label {
                 &::after {
                     transform: translate3d(-50%, -50%, 0) rotate(45deg);
                 }
             }
+
             +.work-body {
                 &::after {
                     display: none;
@@ -973,7 +1135,9 @@ input#text-toggle {
     @media($tablet) {
         display: none;
     }
+
     margin: 1.5rem 0 2rem;
+
     label {
         user-select: none;
         pointer-events: none;
@@ -982,6 +1146,7 @@ input#text-toggle {
         border-top: 1px solid rgba(white, 0.25);
         text-align: center;
         position: relative;
+
         &::after {
             $size: 32px;
             content: "+";

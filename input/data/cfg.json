@@ -5,7 +5,6 @@
     "developerUrl": "https://rolandtoth.hu",
     "phone": "+36 70 6100 564",
     "scripts": [
-        "/assets/scripts/lazysizes.min.js",
         "/assets/scripts/main.js"
     ],
     "logo": "/assets/images/logo-neptunbrigad.svg",
@@ -47,10 +46,22 @@
         }
     },
     "menu": [
-        ["Főoldal", "/"],
-        ["A Neptun Brigád története", "/a-neptun-brigad-tortenete/"],
-        ["Dokumentumok", "/dokumentumok/"],
-        ["Kapcsolat", "/kapcsolat/"]
+        [
+            "Főoldal",
+            "/"
+        ],
+        [
+            "A Neptun Brigád története",
+            "/a-neptun-brigad-tortenete/"
+        ],
+        [
+            "Dokumentumok",
+            "/dokumentumok/"
+        ],
+        [
+            "Kapcsolat",
+            "/kapcsolat/"
+        ]
     ],
     "footerMenu": [
         [

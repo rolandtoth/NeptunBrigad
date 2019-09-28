@@ -4,6 +4,7 @@
     "excerpt": "Egyre kevésbé szeretnék finomkodni a színpadon - interjú Baksa Imrével",
     "permalink": "/{{ title | slug }}/",
     "img": "10-eves-a-neptun-brigad.jpg",
+    "sticky": true,
     "premier": {
         "date": "2019-09-10"
     }

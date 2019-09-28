@@ -32,18 +32,7 @@
         "https://www.youtube.com/watch?v=0WY-kyLZWlU",
         ["facebook", "https://www.facebook.com/rs9official/videos/2198498486831298/"]
     ],
-    "genre": "Pszichothriller",
-    "events": [
-        {
-            "date": "2019-10-26",
-            "time": "20:00",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/590606",
-                "Facebook": "https://www.facebook.com/events/2409320442656419/"
-            }
-        }
-    ]
+    "genre": "Pszichothriller"
 }
 ---
 

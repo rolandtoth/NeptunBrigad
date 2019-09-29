@@ -1,5 +1,6 @@
 const htmlmin = require("html-minifier")
 const events = require("./input/data/events.json")
+const sortObjectArrayByDateValue = require("./filters/sortObjectArrayByDateValue.js")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateDisplay", require("./filters/dateDisplay.js"))
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getImageVariation", require("./filters/getImageVariation.js"))
   eleventyConfig.addFilter("jsMin", require("./filters/jsMin.js"))
   eleventyConfig.addFilter("localeSort", require("./filters/localeSort.js"))
+  eleventyConfig.addFilter("sortObjectArrayByDateValue", require("./filters/sortObjectArrayByDateValue.js"))
 
   eleventyConfig.addPassthroughCopy("assets/")
   eleventyConfig.addPassthroughCopy("_headers")
@@ -33,7 +35,10 @@ module.exports = function (eleventyConfig) {
         return -1
       }
       if (eventsA && eventsB) {
-        return new Date(eventsB[0].date) - new Date(eventsA[0].date)
+        eventsA = sortObjectArrayByDateValue(eventsA, "date")
+        eventsB = sortObjectArrayByDateValue(eventsB, "date")
+
+        return new Date(eventsA[0].date) - new Date(eventsB[0].date)
       }
       if (eventsA) {
         return -1

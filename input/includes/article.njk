@@ -11,7 +11,7 @@
      </a>
     </div>
     {% if nextEvents %}
-        {% set event = nextEvents[0] %}
+        {% set event = (nextEvents | sortObjectArrayByDateValue("date"))[0] %}
         <div class="next-event">
             {% set theater = theaters[event.theater] %}
             <a href="{{ page.url | url }}#eloadasok">

@@ -179,11 +179,19 @@ h1 {
     }
 }
 
-.previous-events-title {
+.previous-events {
     flex-basis: 100%;
     text-align: center;
-    text-transform: uppercase;
-    color: $linkcolor;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: normal;
+        color: white;
+        @include highlightLines(0.25rem, darken($linkcolor, 0.7%));
+        line-height: 1;
+        padding: 0.5rem;
+        display: inline-block;
+    }
 }
 
 .title {

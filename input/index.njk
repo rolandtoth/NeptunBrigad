@@ -24,7 +24,9 @@
     {% endif %}
     {% if not nextEvents and nextEventsTitleWasShown === false and wasAnyPostWithNextEvents %}
         {% set nextEventsTitleWasShown = true %}
-        <h2 class="previous-events-title">Korábbi előadások</h2>
+        <div class="previous-events">
+          <h2>Korábbi előadások</h2>
+        </div>
     {% endif %}
     {% include "article.njk" %}
   {% endfor %}

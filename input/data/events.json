@@ -1,42 +1,44 @@
 {
     "benne-vagy": [
         {
-            "date": "2019-10-15",
-            "time": "20:00",
-            "theater": "juranyi",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/586852",
-                "Facebook": "https://www.facebook.com/events/1253078131538398/"
-            }
-        },
-        {
             "date": "2019-11-07",
             "time": "20:00",
             "theater": "juranyi",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/599078"
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/599078",
+                "Facebook": "https://www.facebook.com/events/2285422074902118/"
+            }
+        }
+    ],
+    "de-mi-lett-a-novel": [
+        {
+            "date": "2019-11-20",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/601791",
+                "Facebook": "https://www.facebook.com/events/417307168923755/"
             }
         }
     ],
     "lancra-vert-szavak": [
         {
-            "date": "2019-10-26",
+            "date": "2019-11-23",
             "time": "20:00",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/590606",
-                "Facebook": "https://www.facebook.com/events/2409320442656419/"
+                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/601801"
             }
         }
     ],
     "trip": [
         {
-            "date": "2019-10-22",
+            "date": "2019-11-26",
             "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532/590601",
-                "Facebook": "https://www.facebook.com/events/898884937177455/"
+                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532",
+                "Facebook": "https://www.facebook.com/events/2972459486181532/"
             }
         }
     ]

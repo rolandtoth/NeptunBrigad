@@ -1,7 +1,7 @@
 ---json
 {
     "title": "Benne vagy",
-    "excerpt": "Kovács Dániel Ambrus rendezi a most készülő színházi előadásunkat. A Benne vagy című darabot április 10-én mutatjuk be a Jurányi Inkubátorházban.",
+    "excerpt": "Dágvány, napjainkban. Lacibát megütötte a guta. Lánya, Szilvi próbálja tovább vinni a kis lábtörlőgyártó céget, Gépkezelő Tibivel kitermelni legalább a hitelrevalót.",
     "permalink": "/{{ title | slug }}/",
     "img": "benne-vagy.jpg",
     "premier": {

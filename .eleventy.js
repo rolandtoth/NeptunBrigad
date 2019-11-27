@@ -34,6 +34,9 @@ module.exports = function (eleventyConfig) {
       if (a.data.sticky) {
         return -1
       }
+      if (b.data.sticky) {
+        return 1
+      }
       if (eventsA && eventsB) {
         eventsA = sortObjectArrayByDateValue(eventsA, "date")
         eventsB = sortObjectArrayByDateValue(eventsB, "date")

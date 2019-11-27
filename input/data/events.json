@@ -1,44 +1,45 @@
 {
-    "benne-vagy": [
-        {
-            "date": "2019-11-07",
-            "time": "20:00",
-            "theater": "juranyi",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/599078",
-                "Facebook": "https://www.facebook.com/events/2285422074902118/"
-            }
-        }
-    ],
-    "de-mi-lett-a-novel": [
-        {
-            "date": "2019-11-20",
-            "time": "20:00",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/601791",
-                "Facebook": "https://www.facebook.com/events/417307168923755/"
-            }
-        }
-    ],
     "lancra-vert-szavak": [
         {
-            "date": "2019-11-23",
+            "date": "2019-12-13",
             "time": "20:00",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/601801"
+                "Facebook": "https://www.jegy.hu/program/lancra-vert-szavak-89458/610685",
+                "Jegyvásárlás": "https://www.facebook.com/events/2888641124561486/"
             }
         }
     ],
     "trip": [
         {
-            "date": "2019-11-26",
+            "date": "2019-12-20",
             "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532",
-                "Facebook": "https://www.facebook.com/events/2972459486181532/"
+                "Jegyvásárlás": "https://www.facebook.com/events/2981297325233037/?event_time_id=2981297328566370",
+                "Facebook": "https://www.jegy.hu/program/trip-99532/610696"
+            }
+        }
+    ],
+    "de-mi-lett-a-novel": [
+        {
+            "date": "2019-12-21",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/610699",
+                "Facebook": "https://www.facebook.com/events/423525841643400/"
+            }
+        }
+    ],
+    "benne-vagy": [
+        {
+            "date": "2020-01-16",
+            "time": "19:00",
+            "theater": "juranyi",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555",
+                "Facebook": "https://www.facebook.com/events/561596404666479/"
             }
         }
     ]

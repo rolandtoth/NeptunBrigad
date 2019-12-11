@@ -11,14 +11,16 @@
      </a>
     </div>
     {% if nextEvents %}
-        {% set event = (nextEvents | sortObjectArrayByDateValue("date"))[0] %}
-        <div class="next-event">
+        {% set events = (nextEvents | sortObjectArrayByDateValue("date")) %}
+        <div class="next-events">
+        {% for event in events %}
             {% set theater = theaters[event.theater] %}
             <a href="{{ page.url | url }}#eloadasok">
-                <strong>{{ event.date | dateDisplay("monthAndDay") }} {{ event.time }}</strong>
+                <span>{{ event.date | dateDisplay("monthAndDay") }} {{ event.time }}</span>
                 <br/>
-                {{ theater.name }}
+                <small>{{ theater.name }}</small>
             </a>
+        {% endfor %}
         </div>
     {% endif %}
 {% endif %}

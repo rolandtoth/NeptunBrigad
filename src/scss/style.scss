@@ -185,7 +185,7 @@ h1 {
 
     h2 {
         text-transform: uppercase;
-        font-weight: normal;
+        font-weight: 300;
         color: white;
         @include highlightLines(0.25rem, darken($linkcolor, 0.7%));
         line-height: 1;
@@ -604,22 +604,29 @@ article {
     }
 }
 
-.next-event {
+.next-events {
     position: absolute;
-    top: 0.75rem;
+    top: 0.5rem;
     left: -0.2rem;
     display: inline-block;
+    pointer-events: none;
 
     a {
-        display: block;
+        pointer-events: all;
+        display: inline-block;
         background: $linkcolor;
-        padding: 0.25rem 0.5rem 0.25rem 1rem;
-        font-size: 0.94rem;
+        padding: 0.36rem 1rem 0.45rem;
+        font-size: 0.97rem;
         text-decoration: none;
         color: white;
+        margin: 0 4px 4px 0;
+        line-height: 1.33;
+        opacity: 0.84;
+        backdrop-filter: blur(5px);
 
         &:hover {
-            background: darken($linkcolor, 10%);
+            color: white;
+            opacity: 0.92;
         }
     }
 }

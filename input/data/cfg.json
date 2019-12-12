@@ -1,6 +1,6 @@
 {
     "siteName": "Neptun Brigád",
-    "slogan": "Nyitott színházi társulat",
+    "slogan": "Színházi társulat",
     "domain": "https://neptunbrigad.hu",
     "developerUrl": "https://rolandtoth.hu",
     "phone": "+36 70 6100 564",
@@ -49,6 +49,10 @@
         [
             "Főoldal",
             "/"
+        ],
+        [
+            "Hírek",
+            "/hirek/"
         ],
         [
             "A Neptun Brigád története",

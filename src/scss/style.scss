@@ -179,17 +179,71 @@ h1 {
     }
 }
 
+h2 {
+    a {
+        text-decoration: none;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.news-list {
+    text-align: center;
+
+    .readmore {
+        position: relative;
+        top: 0.27rem;
+        left: 0.5rem;
+    }
+
+    h2 {
+        @include highlightLines(0.5rem, $darkcolor);
+        text-transform: uppercase;
+        color: $linkcolor;
+        padding: 0.2rem 0 0.33rem;
+    }
+
+    .article-image {
+        margin-bottom: 1rem;
+    }
+
+    .headline-copy {
+        margin-top: 0.5rem;
+    }
+
+    >div {
+        margin: 0 auto 2rem;
+        max-width: 50rem;
+        padding-bottom: 0.5rem;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(white, 0.3);
+        }
+    }
+}
+
+.news-content {
+    .excerpt {
+        font-size: 125%;
+    }
+}
+
+h1+.headline-copy {
+    margin-top: 0.5rem;
+}
+
 .previous-events {
     flex-basis: 100%;
     text-align: center;
 
     h2 {
+        color: $linkcolor;
+        @include highlightLines(0.5rem, $darkcolor);
         text-transform: uppercase;
-        font-weight: 300;
-        color: white;
-        @include highlightLines(0.25rem, darken($linkcolor, 0.7%));
-        line-height: 1;
-        padding: 0.5rem;
+        color: $linkcolor;
+        padding: 0.2rem 0 0.33rem;
         display: inline-block;
     }
 }
@@ -604,6 +658,15 @@ article {
     }
 }
 
+.article-image {
+    @media($desktop) {
+        &__float-right {
+            float: right;
+            margin: 0 0 1rem 2rem;
+        }
+    }
+}
+
 .next-events {
     position: absolute;
     top: 0.5rem;
@@ -841,6 +904,13 @@ a[href^="tel:"] {
         background-size: $size $size;
         border-radius: 50%;
         cursor: pointer;
+    }
+}
+
+.breadcrumb {
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 

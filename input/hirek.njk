@@ -1,0 +1,36 @@
+---
+title: Hírek
+date: Last Modified
+---
+{% extends 'layouts/@default.njk' %}
+
+{% block main %}
+<div class="news-list">
+    {% for page in collections.news %}
+        <div>
+            {% if page.data.img %}
+                {% set imgThumb = page.data.img | postImage("news", "thumb") %}
+                <div class="article-image">
+                    <a href="{{ page.url | url }}">
+                        <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
+                    </a>
+                </div>
+            {% endif %}
+            
+            <div>
+                <h2>
+                    <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+                </h2>
+            </div>
+
+            <p class="headline-copy">{{ page.data.date | dateDisplay }}</p>
+            
+            {% if page.data.excerpt %}
+                <p class="excerpt">
+                    {{ page.data.excerpt }}  <a href="{{ page.url | url }}" class="readmore"></a>
+                </p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

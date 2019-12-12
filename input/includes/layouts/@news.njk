@@ -1,0 +1,33 @@
+{% extends 'layouts/@default.njk' %}
+
+{% block title %}
+<div class="title-wrap">
+  <p class="breadcrumb">
+    <a href="{{ '/hirek/' | url }}">Hírek /</a>
+  </p>
+  <h1>{{ title }}</h1>
+  <p class="headline-copy">{{ date | dateDisplay }}</p>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="post">
+  {% if img %}
+    {% set imgLarge = img | postImage("news") %}
+    <div class="article-image article-image__float-right">
+      <img loading="lazy" src="{{ imgLarge | url | cacheVersion }}" {{ imgLarge | imageDimensions | safe }} alt=""/>
+    </div>
+  {% endif %}
+  <div class="news-content">
+  {% if excerpt %}
+    <p class="excerpt"><em>{{ excerpt }}</em></p>
+  {% endif %}
+    {{ content | safe }}
+  </div>
+  {% if link %}
+    <p>
+      <a href="{{ link }}">{{ link }}</a>
+    </p>
+  {% endif %}
+</div>
+{% endblock %}

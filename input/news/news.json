@@ -1,0 +1,5 @@
+{
+  "layout": "../includes/layouts/@news.njk",
+  "tags": "news",
+  "templateEngineOverride": "njk,md"
+}

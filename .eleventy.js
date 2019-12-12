@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("jsMin", require("./filters/jsMin.js"))
   eleventyConfig.addFilter("localeSort", require("./filters/localeSort.js"))
   eleventyConfig.addFilter("sortObjectArrayByDateValue", require("./filters/sortObjectArrayByDateValue.js"))
+  eleventyConfig.addFilter("slug", require("./filters/slug.js"));
 
   eleventyConfig.addPassthroughCopy("assets/")
   eleventyConfig.addPassthroughCopy("_headers")
@@ -57,6 +58,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("critic", function (collection) {
     return collection.getFilteredByTag("critic")
+  })
+
+  eleventyConfig.addCollection("news", function (collection) {
+    return collection.getFilteredByTag("news").sort(function (a, b) {
+      return new Date(b.data.date) - new Date(a.data.date)
+    });
   })
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

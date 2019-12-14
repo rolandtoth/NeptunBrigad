@@ -6,6 +6,7 @@
     <a href="{{ '/hirek/' | url }}">Hírek</a>
   </p>
   <h1>{{ title }}</h1>
+  {% include "sharingbuttons.njk" %}
   <p class="headline-copy">{{ date | dateDisplay }}</p>
 </div>
 {% endblock %}

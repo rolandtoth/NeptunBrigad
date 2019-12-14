@@ -9,30 +9,28 @@
 {% block title %}{% endblock %}
 
 {% block main %}
+{% include "css-fadeshow.njk" %}
 <section class="articles">
   <h2 class="hidden">Darabok</h2>
   <div>
-  {% set nextEventsTitleWasShown = false %}
-  {% set wasAnyPostWithNextEvents = false %}
-  {% for page in collections.work %}
-    {% if loop.index === 2 %}
+    {% set nextEventsTitleWasShown = false %}
+    {% set wasAnyPostWithNextEvents = false %}
     <div class="masonry">
-    {% endif %}
-    {% set nextEvents = events[(page.fileSlug)] %}
-    {% if nextEvents %}
-        {% set wasAnyPostWithNextEvents = true %}
-    {% endif %}
-    {% if not nextEvents and nextEventsTitleWasShown === false and wasAnyPostWithNextEvents %}
-        {% set nextEventsTitleWasShown = true %}
-        <div class="previous-events">
-          <h2>Korábbi előadások</h2>
-        </div>
-    {% endif %}
-    {% include "article.njk" %}
-  {% endfor %}
-  </div>
+      {% for page in collections.work %}
+        {% set nextEvents = events[(page.fileSlug)] %}
+        {% if nextEvents %}
+            {% set wasAnyPostWithNextEvents = true %}
+        {% endif %}
+        {% if not nextEvents and nextEventsTitleWasShown === false and wasAnyPostWithNextEvents %}
+            {% set nextEventsTitleWasShown = true %}
+            <div class="previous-events">
+              <h2>Korábbi előadások</h2>
+            </div>
+        {% endif %}
+        {% include "article.njk" %}
+      {% endfor %}
+    </div>
   </div>
 </section>
-{%- set js %}{% include "scripts/premier.js" %}{% endset -%}
 <script>{{ js | jsMin | safe }}</script>
 {% endblock %}

@@ -2,7 +2,7 @@
     <ul>
       {% for p in cfg.menu %}
       {% set url = p[1] | url %}
-        <li{% if page.url === url %} class="active"{% endif %}>
+        <li{% if page.url === url or (p[1] !== '/' and page.url.indexOf(p[1]) !== -1) %} class="active"{% endif %}>
             <a href="{{ url }}" data-menu-item>{{ p[0] }}</a>
         </li>
         {% endfor %}

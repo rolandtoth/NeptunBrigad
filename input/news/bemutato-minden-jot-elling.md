@@ -3,9 +3,9 @@
     "title": "Bemutató: Minden jót, Elling!",
     "excerpt": "Bemutató! Minden jót, Elling! címmel új bemutatóra készülünk a Junion Színházzal és az RS9 Színházzal közösen! Ingvar Ambjörnsen norvég író Vértestvérek című regényéből készült előadásunkat január 10-én az RS9 Színházban mutatjuk be, Koleszár Bazil Péter rendezésében.",
     "permalink": "/hirek/{{ title | slug }}/",
+    "gallery": "minden-jot-elling-probafotok",
     "img": "bemutato-minden-jot-elling.jpg",
-    "date": "2019-12-02",
-    "link": "https://szinhaz.org/interju/2019/09/10/egyre-kevesbe-szeretnek-finomkodni-a-szinpadon-interju-baksa-imrevel/"
+    "date": "2019-12-02"
 }
 ---
 

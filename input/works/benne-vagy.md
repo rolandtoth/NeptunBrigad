@@ -25,7 +25,8 @@
         "Tulaj Szilvi": "Messaoudi Emina",
         "Akiagépmellettáll Tibi": "Ficzere Béla"
     },
-    "gallery": "benne-vagy"
+    "gallery": "benne-vagy",
+    "genre": "Színdarab"
 }
 ---
 

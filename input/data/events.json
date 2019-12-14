@@ -66,5 +66,25 @@
                 "Facebook": "https://www.facebook.com/events/561596404666479/"
             }
         }
+    ],
+    "minden-jot-elling": [
+        {
+            "date": "2020-01-10",
+            "time": "19:30",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/623674",
+                "Facebook": "https://www.facebook.com/events/556930601811769/"
+            }
+        },
+        {
+            "date": "2020-01-20",
+            "time": "19:30",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/623684",
+                "Facebook": "https://www.facebook.com/events/556930601811769/"
+            }
+        }
     ]
 }

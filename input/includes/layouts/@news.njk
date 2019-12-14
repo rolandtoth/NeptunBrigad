@@ -3,7 +3,7 @@
 {% block title %}
 <div class="title-wrap">
   <p class="breadcrumb">
-    <a href="{{ '/hirek/' | url }}">Hírek /</a>
+    <a href="{{ '/hirek/' | url }}">Hírek</a>
   </p>
   <h1>{{ title }}</h1>
   <p class="headline-copy">{{ date | dateDisplay }}</p>
@@ -11,13 +11,28 @@
 {% endblock %}
 
 {% block main %}
-<div class="post">
-  {% if img %}
-    {% set imgLarge = img | postImage("news") %}
-    <div class="article-image article-image__float-right">
-      <img loading="lazy" src="{{ imgLarge | url | cacheVersion }}" {{ imgLarge | imageDimensions | safe }} alt=""/>
-    </div>
+
+{% if img or gallery %}
+    <aside class="news-sidebar">
+      {% if img %}
+        {% set imgLarge = img | postImage("news") %}
+        <div class="article-image">
+          <img loading="lazy" src="{{ imgLarge | url | cacheVersion }}" {{ imgLarge | imageDimensions | safe }} alt=""/>
+        </div>
+      {% endif %}
+
+      {% if gallery %}
+          <div class="gallery">
+            <h3 class="hidden">Galéria</h3>
+            <div>
+            {{ gallery | renderGalleryItems | safe }}
+            </div>
+          </div>
+        {% endif %}
+    </aside>
   {% endif %}
+  
+<div class="post">
   <div class="news-content">
   {% if excerpt %}
     <p class="excerpt"><em>{{ excerpt }}</em></p>

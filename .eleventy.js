@@ -50,9 +50,6 @@ module.exports = function (eleventyConfig) {
       if (eventsB) {
         return 1
       }
-      if (a.data.premier && b.data.premier) {
-        return new Date(b.data.premier.date) - new Date(a.data.premier.date)
-      }
     })
   })
 

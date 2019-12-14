@@ -12,6 +12,11 @@
     "themeColor": "#0a0d12",
     "transparentPlaceholder": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
     "images": {
+        "news": {
+            "width": 854,
+            "height": null,
+            "suffix": "news"
+        },
         "large": {
             "width": 640,
             "height": null,

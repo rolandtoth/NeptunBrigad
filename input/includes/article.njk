@@ -5,9 +5,7 @@
     {% set imgThumb = page.data.img | postImage("works", "thumb") %}
     <div class="article-image">
      <a href="{{ page.url | url }}"{% if loop.index === 1 %} style="background-image: url('{{ imgLarge | url }}');"{% endif %} title="">
-        {% if loop.index > 1 %}
-            <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
-        {% endif %}
+        <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
      </a>
     </div>
     {% if nextEvents %}
@@ -28,14 +26,8 @@
         <h2>
           <a href="{{ page.url | url }}" title="">{{ page.data.title }}</a>
         </h2>
-        <p class="headline-copy">{{ page.data.genre }} {{ page.data.premier.date | dateDisplay("year") }}</p>
+        <p class="headline-copy">{{ page.data.genre | lower }}</p>
         <p class="excerpt">{{ page.data.excerpt | safe }}</p>
         <a href="{{ page.url | url }}" class="readmore"><span>Tovább</span></a>
-        {% set premier = page.data.premier %}
-        <p class="premier-info" style="display: none;">
-            <a href="{{ page.data.link }}" target="_blank">
-                <span>Premier</span> {{ premier.date | dateDisplay }} <br>{{ premier.theater }}, {{ premier.time }}
-            </a>
-        </p>
     </div>
 </article>

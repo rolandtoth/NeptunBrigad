@@ -1,8 +1,9 @@
 ---json
 {
-    "title": "Ajándékozzon színházjegyet karácsonyra!",
-    "excerpt": "Már elérhető a januári műsorunk",
+    "title": "Ajándékozzon színházjegyet karácsonyra",
+    "excerpt": "Már elérhető a januári műsorunk!",
     "permalink": "/hirek/{{ title | slug }}/",
+    "img": "ajandekozzon-szinhazjegyet-karacsonyra.jpg",
     "date": "2019-12-06"
 }
 ---

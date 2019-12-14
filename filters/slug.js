@@ -3,7 +3,7 @@ const slugify = require("slugify");
 module.exports = function (input) {
     const options = {
         replacement: "-",
-        remove: /[&,+()$~%.'":*?<>{}]/g,
+        remove: /[&!,+()$~%.'":*?<>{}]/g,
         lower: true
     };
 

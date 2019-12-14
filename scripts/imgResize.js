@@ -6,7 +6,15 @@ const path = require("path");
 const sizeOf = require("image-size");
 // const del = require('del');
 
-glob("src/images/{works,news}/*.*(jpg|png)", null, function (er, files) {
+// glob("src/images/{works,news}/*.*(jpg|png)", null, function (er, files) {
+glob("src/images/works/*.*(jpg|png)", null, function (er, files) {
+    resizeImages(files, cfg.images.large);
+    resizeImages(files, cfg.images.thumb);
+    resizeImages(files, cfg.images.lqp);
+});
+
+glob("src/images/news/*.*(jpg|png)", null, function (er, files) {
+    resizeImages(files, cfg.images.news);
     resizeImages(files, cfg.images.large);
     resizeImages(files, cfg.images.thumb);
     resizeImages(files, cfg.images.lqp);

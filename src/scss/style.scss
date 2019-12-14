@@ -32,6 +32,7 @@ $max-hd: "max-width: #{$_xhd - 1}px";
 @import "mixins";
 @import "sharingbuttons";
 @import "fg_grid/fg_grid";
+@import "css-fadeshow/scss/css-fadeshow";
 
 // override defaults
 * {
@@ -104,7 +105,6 @@ body {
     line-height: 1.66;
     color: $base;
     font-size: 14px;
-    font-weight: 300;
 
     @media ($tablet) {
         font-size: 15px;
@@ -114,7 +114,7 @@ body {
         font-size: 16px;
     }
 
-    @media ($desktop) {
+    @media ($hd) {
         font-size: 17px;
     }
 
@@ -165,7 +165,7 @@ h3 {
 }
 
 h1 {
-    @include highlightLines(0.5rem, $darkcolor);
+    @include highlightLines(0.5rem, darken($darkcolor, 4%));
     text-transform: uppercase;
     color: $linkcolor;
     padding: 0.2rem 0 0.33rem;
@@ -189,6 +189,13 @@ h2 {
     overflow: hidden;
 }
 
+.highlightTitle {
+    @include highlightLines(0.5rem, darken($darkcolor, 4%));
+    text-transform: uppercase;
+    color: $linkcolor;
+    padding: 0.16rem 0 0.24rem;
+}
+
 .news-list {
     text-align: center;
 
@@ -199,10 +206,7 @@ h2 {
     }
 
     h2 {
-        @include highlightLines(0.5rem, $darkcolor);
-        text-transform: uppercase;
-        color: $linkcolor;
-        padding: 0.2rem 0 0.33rem;
+        @extend .highlightTitle;
     }
 
     .article-image {
@@ -239,11 +243,7 @@ h1+.headline-copy {
     text-align: center;
 
     h2 {
-        color: $linkcolor;
-        @include highlightLines(0.5rem, $darkcolor);
-        text-transform: uppercase;
-        color: $linkcolor;
-        padding: 0.2rem 0 0.33rem;
+        @extend .highlightTitle;
         display: inline-block;
     }
 }
@@ -578,7 +578,7 @@ img {
 }
 
 article {
-    background: $bgcolor; // background: rgba(black, 0.84);
+    background: $bgcolor;
     margin-bottom: 1rem;
     position: relative;
 
@@ -658,12 +658,21 @@ article {
     }
 }
 
-.article-image {
+// .article-image {
+//     @media($desktop) {
+//         &__float-right {
+//             float: right;
+//             margin: 0 0 1rem 2rem;
+//         }
+//     }
+// }
+
+.news-sidebar {
     @media($desktop) {
-        &__float-right {
-            float: right;
-            margin: 0 0 1rem 2rem;
-        }
+        float: right;
+        margin: 0 0 1rem 2rem;
+        width: 50%;
+        max-width: 36rem;
     }
 }
 
@@ -720,75 +729,75 @@ article {
     }
 }
 
-section.articles {
-    >div>article:first-child {
-        display: block;
+// section.articles {
+//     >div>article:first-child {
+//         display: block;
 
-        .article-image {
-            a {
-                display: block;
-                min-height: 16rem;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-            }
-        }
-    }
-}
+//         .article-image {
+//             a {
+//                 display: block;
+//                 min-height: 16rem;
+//                 background-size: cover;
+//                 background-position: center center;
+//                 background-repeat: no-repeat;
+//             }
+//         }
+//     }
+// }
 
-@media ($tablet) {
-    section.articles {
-        >div>article:first-child {
-            .article-image {
-                a {
-                    min-height: 24rem;
-                }
-            }
-        }
-    }
-}
+// @media ($tablet) {
+//     section.articles {
+//         >div>article:first-child {
+//             .article-image {
+//                 a {
+//                     min-height: 24rem;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media ($desktop) {
-    section.articles {
-        >div>article:first-child {
-            @include clearfix;
+// @media ($desktop) {
+//     section.articles {
+//         >div>article:first-child {
+//             @include clearfix;
 
-            .article-image {
-                float: left;
-                width: 67.5%;
-                margin-right: 2rem;
+//             .article-image {
+//                 float: left;
+//                 width: 67.5%;
+//                 margin-right: 2rem;
 
-                a {
-                    min-height: 30rem;
-                }
-            }
+//                 a {
+//                     min-height: 30rem;
+//                 }
+//             }
 
-            .description {
-                top: 50%;
-                position: absolute;
-                padding-left: 0;
-                transform: translateY(-50%);
-                margin-left: calc(67.5% + 2rem);
-            }
+//             .description {
+//                 top: 50%;
+//                 position: absolute;
+//                 padding-left: 0;
+//                 transform: translateY(-50%);
+//                 margin-left: calc(67.5% + 2rem);
+//             }
 
-            h2 {
-                font-size: 1.84rem;
+//             h2 {
+//                 font-size: 1.84rem;
 
-                &::after {
-                    left: 0;
-                }
-            }
+//                 &::after {
+//                     left: 0;
+//                 }
+//             }
 
-            .excerpt {
-                font-size: 1.04rem;
-            }
+//             .excerpt {
+//                 font-size: 1.04rem;
+//             }
 
-            .premier-info {
-                margin-left: -2rem;
-            }
-        }
-    }
-}
+//             .premier-info {
+//                 margin-left: -2rem;
+//             }
+//         }
+//     }
+// }
 
 .two-col {
     @media ($desktop) {
@@ -910,7 +919,11 @@ a[href^="tel:"] {
 .breadcrumb {
     a {
         text-decoration: none;
-        color: white;
+        color: rgba(white, 0.7);
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
@@ -1002,6 +1015,7 @@ a[href^="tel:"] {
 .gallery {
     @include clearfix;
     margin-left: -0.25rem;
+    margin-right: -0.5rem;
 
     a {
         display: block;
@@ -1021,6 +1035,7 @@ a[href^="tel:"] {
         display: block;
         width: 100%;
         height: auto;
+        margin: 0;
     }
 }
 
@@ -1251,4 +1266,111 @@ input#text-toggle {
             pointer-events: all;
         }
     }
+}
+
+[data-am-fadeshow] {
+    padding-top: 42%;
+    background: $bgcolor;
+    margin-bottom: 1rem;
+
+    @media($max-mobile) {
+        padding-top: 0;
+        min-height: 19rem;
+        text-align: center;
+
+        .breadcrumb {
+            display: none;
+        }
+    }
+
+    @media ($desktop) {
+        margin-bottom: 2rem;
+    }
+
+    .fs-quick-btn {
+        padding: 0.12rem 0.5rem;
+        border-radius: 0 !important;
+        background: #c82417 !important;
+    }
+
+    .fs-quick-nav {
+        @media($tablet) {
+            margin-left: 25%;
+        }
+
+        @media($desktop) {
+            margin-left: 16.667%;
+        }
+    }
+}
+
+.fs-slide {
+    @media ($max-mobile) {
+        flex-wrap: nowrap;
+    }
+
+    @media ($tablet) {
+        @include _fg(2, 0, 0);
+    }
+
+    @media ($desktop) {
+        @include _fg(1 2, 0, 0);
+    }
+
+    .fs-slide-title {
+        margin-bottom: 1rem;
+
+        @media($max-mobile) {
+            margin-top: 5.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+
+    h2 {
+        @extend .highlightTitle;
+    }
+
+    .fs-slide-img {
+        position: relative;
+
+        @media($max-mobile) {
+            position: absolute;
+            top: 1rem;
+            width: 6rem;
+            height: 5rem;
+            margin: 0 1rem 1rem -3rem;
+            left: 50%;
+        }
+    }
+
+    .readmore-wrap {
+        @media($max-mobile) {
+            display: none;
+        }
+    }
+
+    .fs-slide-text {
+        padding: 1rem;
+        align-self: center;
+
+        @media ($tablet) {
+            padding: 1.75rem 1.25rem .5rem;
+        }
+
+        @media ($desktop) {
+            padding: 2rem 2.5rem;
+        }
+    }
+
+    .fs-slide-bg {
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+.fs-quick-btn {
+    background-color: $linkcolor;
 }

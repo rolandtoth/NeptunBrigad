@@ -1,0 +1,68 @@
+// CSS Fadeshow by @alexerlandsson
+// This is a fadeshow built in SCSS and with customization in focus.
+// Supports Quick Navigation, Prev/Next Navigation, Slide Counter and Autoplay.
+
+// For better documentation and implementation guide, check out the GitHub repository:
+// https://github.com/alexerlandsson/css-fadeshow
+
+
+// ===== SETTINGS =====
+
+// Change these variables to match your preferences. For a more detailed
+// description of what each variable do, visit https://github.com/alexerlandsson/css-fadeshow
+
+// Modifiers to include
+$fs-include-autoplay: true;
+$fs-include-prevnextnav: false;
+$fs-include-quicknav: true;
+$fs-include-slidecounter: false;
+$fs-include-kenburns: false;
+
+// Base Settings
+$fs-max-slides: 5;
+$fs-fade-time: 0.75;
+$fs-fade-color: #fff;
+$fs-prefix: false;
+$fs-breakpoint-small: 500px;
+
+// Prev/Next Navigation
+$fs-prevnextnav-loop: true;
+
+// Autoplay
+$fs-autoplay-duration: 8;
+
+// Ken Burns
+$fs-kenburns-duration: 5;
+$fs-kenburns-scale: 1.05;
+
+
+// ===== IMPORTS =====
+
+// Do not change anything here.
+// All files needs to be included in the corresponding order.
+
+@import 'imports/mixins';
+@import 'themes/theme';
+@import 'imports/base';
+//@import 'imports/kenburns';
+//@import 'imports/prevnextnav';
+@import 'imports/quicknav';
+//@import 'imports/slidecounter';
+@import 'imports/autoplay';
+
+
+
+// Only include the modifiers being used
+//@if $fs-include-kenburns { @include fs-kenburns; }
+@if $fs-include-prevnextnav {
+    @include fs-prevnextnav;
+}
+
+@if $fs-include-quicknav {
+    @include fs-quicknav;
+}
+
+//@if $fs-include-slidecounter { @include fs-slidecounter; }
+@if $fs-include-autoplay {
+    @include fs-autoplay;
+}

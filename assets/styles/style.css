@@ -1440,6 +1440,8 @@ input#text-toggle {
   margin-bottom: 1.5rem; }
   .news-slider-wrap #news-slider {
     background: #1f212c; }
+  .news-slider-wrap .news-slider__slide + .news-slider__slide {
+    display: none; }
   @media (min-width: 996px) {
     .news-slider-wrap .content {
       box-sizing: border-box;
@@ -1481,7 +1483,7 @@ input#text-toggle {
     .news-slider-wrap .tns-nav button {
       width: 0;
       height: 0;
-      padding: 6px;
+      padding: 5px;
       background: rgba(255, 255, 255, 0.5);
       margin: 0.3rem;
       border-radius: 100%;

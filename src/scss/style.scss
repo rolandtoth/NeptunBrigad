@@ -133,8 +133,7 @@ body {
         bottom: 0;
         z-index: -1;
         backface-visibility: hidden;
-        background: $darkcolor url('#{$images}/bg-mobile.jpg') center top
-            no-repeat;
+        background: $darkcolor url('#{$images}/bg-mobile.jpg') center top no-repeat;
         background-size: 100% auto;
         opacity: 0.8;
 
@@ -220,7 +219,7 @@ h2 {
         margin-top: 0.5rem;
     }
 
-    > div {
+    >div {
         margin: 0 auto 2rem;
         max-width: 50rem;
         padding-bottom: 0.5rem;
@@ -237,11 +236,11 @@ h2 {
     }
 }
 
-h1 + .headline-copy {
+h1+.headline-copy {
     margin-top: 0.5rem;
 }
 
-.sharingbuttons + .headline-copy {
+.sharingbuttons+.headline-copy {
     margin-top: 0.5rem;
 }
 
@@ -281,8 +280,7 @@ h1 + .headline-copy {
             display: inline-block;
             padding: 0.5rem 0 0.5rem 1.75rem;
             color: white;
-            background: transparent url('#{$images}/icons/icon-document.svg') 0
-                0.5rem no-repeat;
+            background: transparent url('#{$images}/icons/icon-document.svg') 0 0.5rem no-repeat;
             background-size: $size $size;
             color: #fff;
 
@@ -316,6 +314,7 @@ h1 + .headline-copy {
     }
 
     @media ($desktop) {
+
         &,
         a {
             font-size: 0.9rem;
@@ -402,7 +401,7 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
 
-    > .container > div {
+    >.container>div {
         border-top: 1px solid rgba(white, 0.33);
         padding-top: 1rem;
     }
@@ -455,12 +454,12 @@ footer {
             float: left;
         }
 
-        nav ~ nav {
+        nav~nav {
             float: right;
         }
     }
 
-    nav ~ nav {
+    nav~nav {
         margin-top: -0.2rem;
 
         img {
@@ -558,8 +557,7 @@ img {
     $offset: -0.33rem;
     width: $outerSize;
     height: $outerSize;
-    background: transparent url('#{$images}/icons/icon-readmore.svg') center
-        center no-repeat;
+    background: transparent url('#{$images}/icons/icon-readmore.svg') center center no-repeat;
     background-size: $size $size;
     margin: $offset 0 $offset $offset;
     text-decoration: none;
@@ -950,7 +948,7 @@ a[href^='tel:'] {
     }
 
     section {
-        > div {
+        >div {
             @include clearfix;
         }
     }
@@ -1060,16 +1058,14 @@ div#baguetteBox-overlay {
 }
 
 input#menu-toggle {
-    @include hamburger(
-        $width: 24px,
+    @include hamburger($width: 24px,
         $thickness: 2px,
         $gap: 6px,
         $color: white,
         $padding: 1.25rem,
-        $anim: 0
-    );
+        $anim: 0);
 
-    + label {
+    +label {
         position: fixed;
         top: 0;
         right: 0;
@@ -1077,14 +1073,14 @@ input#menu-toggle {
     }
 
     @media ($desktop) {
-        &:not(:checked) + label {
+        &:not(:checked)+label {
             display: none;
         }
     }
 
     &:checked {
-        ~ header {
-            > .container {
+        ~header {
+            >.container {
                 float: none;
                 position: fixed;
                 bottom: 0;
@@ -1208,16 +1204,14 @@ input#text-toggle {
 
 @media ($max-mobile) {
     input#text-toggle {
-        + .work-body {
+        +.work-body {
             position: relative;
 
             &::after {
                 content: '';
-                background-image: linear-gradient(
-                    to bottom,
-                    transparent,
-                    $darkcolor
-                );
+                background-image: linear-gradient(to bottom,
+                        transparent,
+                        $darkcolor);
                 height: 6rem;
                 position: absolute;
                 left: 0;
@@ -1227,20 +1221,20 @@ input#text-toggle {
         }
 
         &:not(:checked) {
-            + .work-body {
+            +.work-body {
                 max-height: 8rem;
                 overflow: hidden;
             }
         }
 
         &:checked {
-            ~ p label {
+            ~p label {
                 &::after {
                     transform: translate3d(-50%, -50%, 0) rotate(45deg);
                 }
             }
 
-            + .work-body {
+            +.work-body {
                 &::after {
                     display: none;
                 }
@@ -1294,24 +1288,33 @@ input#text-toggle {
         background: $bgcolor;
     }
 
+    .news-slider__slide+.news-slider__slide {
+        display: none;
+    }
+
     .content {
         @media ($desktop) {
             @include _fg(1 2, 0, 0);
         }
+
         .news-slider {
             &__text {
                 align-self: center;
                 padding: 1.75rem 1.25rem 0 1.25rem;
+
                 @media ($desktop) {
                     padding: 1.75rem 2rem 1rem;
                 }
             }
+
             &__title {
                 margin-bottom: 1rem;
+
                 h2 {
                     @extend .highlightTitle;
                 }
             }
+
             &__img {
                 height: 0;
                 padding-top: 66%;
@@ -1338,15 +1341,17 @@ input#text-toggle {
         button {
             width: 0;
             height: 0;
-            padding: 6px;
+            padding: 5px;
             background: rgba(white, 0.5);
             margin: 0.3rem;
             border-radius: 100%;
             border: 2px solid transparent;
             background-clip: padding-box;
+
             &:hover {
                 background: rgba(white, 0.75);
             }
+
             &.tns-nav-active {
                 background: $linkcolor;
             }
@@ -1366,6 +1371,7 @@ input#text-toggle {
 
     .readmore-wrap {
         display: none;
+
         @media ($desktop) {
             display: block;
         }

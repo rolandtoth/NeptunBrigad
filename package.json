@@ -15,7 +15,7 @@
     "build:css": "node-sass --include-path src/scss/includes src/scss/style.scss | postcss --use autoprefixer -b \"last 2 versions\" --use cssnano --no-map > assets/styles/style.css",
     "build:cssdev": "node-sass --include-path src/scss/includes src/scss/style.scss assets/styles/style.css",
     "lint": "jshint src/js/main.js",
-    "build:js": "uglifyjs src/js/main.js -o input/includes/main.js",
+    "build:js": "uglifyjs src/js/main.js -o assets/scripts/main.js",
     "build:jsdev": "cpx src/js/main.js assets/scripts/",
     "build": "npm run build:css && npm run build:js",
     "prebuild:js": "npm run lint",

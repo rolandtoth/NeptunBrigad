@@ -25,8 +25,7 @@
             <meta property="og:image:height" content="630">
         {%- endif %}
         <script>document.querySelector('html').classList.remove('no-js');</script>
-        {%- set styles %}{% include "style.css" %}{% endset -%}
-        <style>{{ styles | safe }}</style>
+        <link rel="stylesheet" href="{{ '/assets/styles/style.css' | url }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon.png" | cacheVersion }}">
         <meta name="theme-color" content="#1B1F24">
     </head>

@@ -11,7 +11,7 @@
 
 **A Jurányi Házban látható**  **Benne vagy**  **című előadás korunk egyik legfontosabb kérdését teszi fel a nézőnek: mit tehetünk, amikor döntetnünk kell a kenyér és a gerinc között? Van ugyanis ebben a történetben minden az olcsó simliskedésen kezdve a korrupción át a morális áldozatokig – pedig még csak nem is a felsőbb körök játszmáiba pillantunk be, hanem egy dágványi lábtörlőgyár működésébe. Az előadás kapcsán a rendezővel, Kovács Dániel Ambrussal beszélgettünk.**
 
-**A ****Benne vag**** erősen épül a színészek improvizációjára. Milyen volt ez a közös munka?**
+**A ****Benne vagy**** erősen épül a színészek improvizációjára. Milyen volt ez a közös munka?**
 
 Az előadás próbafolyamata a szokásoshoz képest fordítva zajlott. Először csak a témával indultunk el, beszélgettünk, kutakodtunk, improvizáltunk, egyre jobban közeledtünk ahhoz, amit mondani szeretnénk, megírt jelenetek viszont nem voltak. A bemutató előtt tíz nappal lett kész a szövegkönyv, három-négy nap eltelt szövegtanulással, úgyhogy valójában egy nagyon intenzív, a színészek számára leterhelő egyhetes próbafolyamat előzte meg az előadást.  Mivel a szöveg maga erősen törekszik a köznyelviségre, igyekszik megőrizni annak minden jellegzetességét az ismétlésekkel, a félbeszakadt mondatokkal együtt, ezért nem volt egyszerű feladat megtanulni, sőt még száz százalékosan hibátlanul egyik alkalommal sem hangzott el. Itt-ott ki is maradnak belőle részek, de ez nem is olyan nagy baj, ha egyébként van lendület. Azért is volt végül elég a tíznapos próbafolyamat, mert mire elkezdtünk foglalkozni a tényleges jelenetekkel, a színészek már megvoltak a szerepeikkel, hiszen részben ők írták, részben pedig rájuk íródott.
 

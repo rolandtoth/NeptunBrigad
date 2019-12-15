@@ -2,14 +2,14 @@
 
 // variables
 @charset "UTF-8";
-$version: "?v=20190331a";
+$version: '?v=20190331a';
 $base: #2c3235;
 $linkcolor: #c82417;
 $darkcolor: #0a101d;
 $bgcolor: rgba(31, 33, 44, 1);
 $bordercolor: #dadada;
 $mutedWhite: rgba(white, 0.5);
-$images: "/assets/images";
+$images: '/assets/images';
 
 // breakpoints
 $_mobile: 480;
@@ -17,22 +17,22 @@ $_tablet: 640;
 $_desktop: 996;
 $_hd: 1280;
 $_xhd: 1600;
-$mobile: "min-width: #{$_mobile}px";
-$tablet: "min-width: #{$_tablet}px";
-$desktop: "min-width: #{$_desktop}px";
-$hd: "min-width: #{$_hd}px";
-$xhd: "min-width: #{$_xhd}px";
-$max-mobile: "max-width: #{$_tablet - 1}px";
-$max-tablet: "max-width: #{$_desktop - 1}px";
-$max-desktop: "max-width: #{$_hd - 1}px";
-$max-hd: "max-width: #{$_xhd - 1}px";
+$mobile: 'min-width: #{$_mobile}px';
+$tablet: 'min-width: #{$_tablet}px';
+$desktop: 'min-width: #{$_desktop}px';
+$hd: 'min-width: #{$_hd}px';
+$xhd: 'min-width: #{$_xhd}px';
+$max-mobile: 'max-width: #{$_tablet - 1}px';
+$max-tablet: 'max-width: #{$_desktop - 1}px';
+$max-desktop: 'max-width: #{$_hd - 1}px';
+$max-hd: 'max-width: #{$_xhd - 1}px';
 
 // imports
-@import "normalize";
-@import "mixins";
-@import "sharingbuttons";
-@import "fg_grid/fg_grid";
-@import "css-fadeshow/scss/css-fadeshow";
+@import 'normalize';
+@import 'mixins';
+@import 'sharingbuttons';
+@import 'fg_grid/fg_grid';
+@import 'css-fadeshow/scss/css-fadeshow';
 
 // override defaults
 * {
@@ -87,6 +87,7 @@ img {
 a {
     color: $linkcolor;
     text-decoration: underline;
+    font-weight: 400;
 
     &:hover {
         color: lighten($linkcolor, 10%);
@@ -101,10 +102,12 @@ html {
 }
 
 body {
-    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif;
     line-height: 1.66;
     color: $base;
     font-size: 14px;
+    font-weight: 300;
 
     @media ($tablet) {
         font-size: 15px;
@@ -123,7 +126,7 @@ body {
     height: 100%;
 
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         top: 0;
@@ -131,13 +134,14 @@ body {
         bottom: 0;
         z-index: -1;
         backface-visibility: hidden;
-        background: $darkcolor url("#{$images}/bg-mobile.jpg") center top no-repeat;
+        background: $darkcolor url('#{$images}/bg-mobile.jpg') center top
+            no-repeat;
         background-size: 100% auto;
         opacity: 0.8;
 
         @media ($desktop) {
             position: fixed;
-            background-image: url("#{$images}/bg.jpg");
+            background-image: url('#{$images}/bg.jpg');
         }
     }
 }
@@ -148,11 +152,7 @@ body {
     padding: 0 1.12rem;
 
     @media ($desktop) {
-        max-width: 80rem;
-        padding: 0 2rem;
-    }
-
-    @media ($hd) {
+        max-width: 92rem;
         padding: 0 3rem;
     }
 }
@@ -162,6 +162,10 @@ h2,
 h3 {
     font-weight: 500;
     letter-spacing: 0.5px;
+
+    a {
+        font-weight: 500;
+    }
 }
 
 h1 {
@@ -217,7 +221,7 @@ h2 {
         margin-top: 0.5rem;
     }
 
-    >div {
+    > div {
         margin: 0 auto 2rem;
         max-width: 50rem;
         padding-bottom: 0.5rem;
@@ -234,11 +238,11 @@ h2 {
     }
 }
 
-h1+.headline-copy {
+h1 + .headline-copy {
     margin-top: 0.5rem;
 }
 
-.sharingbuttons+.headline-copy {
+.sharingbuttons + .headline-copy {
     margin-top: 0.5rem;
 }
 
@@ -278,7 +282,8 @@ h1+.headline-copy {
             display: inline-block;
             padding: 0.5rem 0 0.5rem 1.75rem;
             color: white;
-            background: transparent url("#{$images}/icons/icon-document.svg") 0 0.5rem no-repeat;
+            background: transparent url('#{$images}/icons/icon-document.svg') 0
+                0.5rem no-repeat;
             background-size: $size $size;
             color: #fff;
 
@@ -312,7 +317,6 @@ h1+.headline-copy {
     }
 
     @media ($desktop) {
-
         &,
         a {
             font-size: 0.9rem;
@@ -399,7 +403,7 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
 
-    >.container>div {
+    > .container > div {
         border-top: 1px solid rgba(white, 0.33);
         padding-top: 1rem;
     }
@@ -452,12 +456,12 @@ footer {
             float: left;
         }
 
-        nav~nav {
+        nav ~ nav {
             float: right;
         }
     }
 
-    nav~nav {
+    nav ~ nav {
         margin-top: -0.2rem;
 
         img {
@@ -555,7 +559,8 @@ img {
     $offset: -0.33rem;
     width: $outerSize;
     height: $outerSize;
-    background: transparent url("#{$images}/icons/icon-readmore.svg") center center no-repeat;
+    background: transparent url('#{$images}/icons/icon-readmore.svg') center
+        center no-repeat;
     background-size: $size $size;
     margin: $offset 0 $offset $offset;
     text-decoration: none;
@@ -606,7 +611,7 @@ article {
         font-size: 1.27rem;
         line-height: 1.33;
 
-        @media($desktop) {
+        @media ($desktop) {
             font-size: 1.36rem;
         }
 
@@ -622,7 +627,7 @@ article {
         }
 
         &::after {
-            content: "";
+            content: '';
             width: 60px;
             height: 4px;
             position: absolute;
@@ -672,7 +677,7 @@ article {
 // }
 
 .news-sidebar {
-    @media($desktop) {
+    @media ($desktop) {
         float: right;
         margin: 0 0 1rem 2rem;
         width: 50%;
@@ -810,7 +815,7 @@ article {
     }
 }
 
-a[href^="tel:"] {
+a[href^='tel:'] {
     font-size: 1.08rem;
     color: white;
     text-decoration: none;
@@ -824,7 +829,6 @@ a[href^="tel:"] {
         @include _fg(2, 1rem, 0);
 
         .article-image {
-
             height: 0;
             padding-top: 60%;
 
@@ -854,7 +858,7 @@ a[href^="tel:"] {
 
 .back {
     @extend .readmore;
-    background-image: url("#{$images}/icons/icon-back.svg");
+    background-image: url('#{$images}/icons/icon-back.svg');
     margin-top: 1rem;
 }
 
@@ -913,7 +917,7 @@ a[href^="tel:"] {
         margin-left: -$size/2;
         margin-top: -$size/2;
         position: absolute;
-        background: $linkcolor url("#{$images}/icons/play.svg") no-repeat;
+        background: $linkcolor url('#{$images}/icons/play.svg') no-repeat;
         background-size: $size $size;
         border-radius: 50%;
         cursor: pointer;
@@ -947,7 +951,7 @@ a[href^="tel:"] {
     }
 
     section {
-        >div {
+        > div {
             @include clearfix;
         }
     }
@@ -978,7 +982,7 @@ a[href^="tel:"] {
     font-size: 1rem;
     max-width: 27rem;
 
-    @media($desktop) {
+    @media ($desktop) {
         margin-left: -2rem;
     }
 
@@ -1057,9 +1061,16 @@ div#baguetteBox-overlay {
 }
 
 input#menu-toggle {
-    @include hamburger($width: 24px, $thickness: 2px, $gap: 6px, $color: white, $padding: 1.25rem, $anim: 0);
+    @include hamburger(
+        $width: 24px,
+        $thickness: 2px,
+        $gap: 6px,
+        $color: white,
+        $padding: 1.25rem,
+        $anim: 0
+    );
 
-    +label {
+    + label {
         position: fixed;
         top: 0;
         right: 0;
@@ -1067,14 +1078,14 @@ input#menu-toggle {
     }
 
     @media ($desktop) {
-        &:not(:checked)+label {
+        &:not(:checked) + label {
             display: none;
         }
     }
 
     &:checked {
-        ~header {
-            >.container {
+        ~ header {
+            > .container {
                 float: none;
                 position: fixed;
                 bottom: 0;
@@ -1158,7 +1169,7 @@ input#menu-toggle {
 .sharingbuttons {
     margin-left: -0.25rem;
 
-    @media($desktop) {
+    @media ($desktop) {
         display: inline-block;
         margin-left: 2rem;
         position: relative;
@@ -1196,14 +1207,18 @@ input#text-toggle {
     display: none;
 }
 
-@media($max-mobile) {
+@media ($max-mobile) {
     input#text-toggle {
-        +.work-body {
+        + .work-body {
             position: relative;
 
             &::after {
-                content: "";
-                background-image: linear-gradient(to bottom, transparent, $darkcolor);
+                content: '';
+                background-image: linear-gradient(
+                    to bottom,
+                    transparent,
+                    $darkcolor
+                );
                 height: 6rem;
                 position: absolute;
                 left: 0;
@@ -1213,20 +1228,20 @@ input#text-toggle {
         }
 
         &:not(:checked) {
-            +.work-body {
+            + .work-body {
                 max-height: 8rem;
                 overflow: hidden;
             }
         }
 
         &:checked {
-            ~p label {
+            ~ p label {
                 &::after {
                     transform: translate3d(-50%, -50%, 0) rotate(45deg);
                 }
             }
 
-            +.work-body {
+            + .work-body {
                 &::after {
                     display: none;
                 }
@@ -1236,7 +1251,7 @@ input#text-toggle {
 }
 
 .text-toggle {
-    @media($tablet) {
+    @media ($tablet) {
         display: none;
     }
 
@@ -1253,7 +1268,7 @@ input#text-toggle {
 
         &::after {
             $size: 32px;
-            content: "+";
+            content: '+';
             width: $size;
             height: $size;
             font-size: $size;
@@ -1277,7 +1292,7 @@ input#text-toggle {
     background: $bgcolor;
     margin-bottom: 1rem;
 
-    @media($max-mobile) {
+    @media ($max-mobile) {
         padding-top: 0;
         min-height: 19rem;
         text-align: center;
@@ -1298,11 +1313,11 @@ input#text-toggle {
     }
 
     .fs-quick-nav {
-        @media($tablet) {
+        @media ($tablet) {
             margin-left: 25%;
         }
 
-        @media($desktop) {
+        @media ($desktop) {
             margin-left: 16.667%;
         }
     }
@@ -1324,7 +1339,7 @@ input#text-toggle {
     .fs-slide-title {
         margin-bottom: 1rem;
 
-        @media($max-mobile) {
+        @media ($max-mobile) {
             margin-top: 5.5rem;
         }
 
@@ -1340,7 +1355,7 @@ input#text-toggle {
     .fs-slide-img {
         position: relative;
 
-        @media($max-mobile) {
+        @media ($max-mobile) {
             position: absolute;
             top: 1rem;
             width: 6rem;
@@ -1351,7 +1366,7 @@ input#text-toggle {
     }
 
     .readmore-wrap {
-        @media($max-mobile) {
+        @media ($max-mobile) {
             display: none;
         }
     }
@@ -1361,7 +1376,7 @@ input#text-toggle {
         align-self: center;
 
         @media ($tablet) {
-            padding: 1.75rem 1.25rem .5rem;
+            padding: 1.75rem 1.25rem 0.5rem;
         }
 
         @media ($desktop) {

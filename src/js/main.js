@@ -3,7 +3,8 @@ var scriptsDir = "/assets/scripts/";
 document.addEventListener("DOMContentLoaded", function () {
 
     var div, n, service, id, thumbUrl,
-        v = document.getElementsByClassName("video-player");
+        v = document.getElementsByClassName("video-player"),
+        newsSliderElement = document.getElementById("news-slider");
 
     for (n = 0; n < v.length; n++) {
         var $el = v[n];
@@ -23,6 +24,38 @@ document.addEventListener("DOMContentLoaded", function () {
         $el.appendChild(div);
 
         div.querySelector(".play").onclick = labnolIframe;
+    }
+
+    if (newsSliderElement) {
+        loadAsset(scriptsDir + 'tiny-slider/tiny-slider.min.css?selector="#news-slider"&async=true', function () {
+            var selector = this.selector;
+
+            loadAsset(scriptsDir + 'tiny-slider/tiny-slider.min.js?async=true', function () {
+                var newsSlider = tns({
+                    container: selector,
+                    items: 1,
+                    autoHeight: true,
+                    // autoplay: true,
+                    controls: false,
+                    controlsPosition: 'bottom',
+                    navPosition: 'bottom',
+                    mouseDrag: true,
+                    // responsive: {
+                    //     640: {
+                    //         edgePadding: 20,
+                    //         gutter: 20,
+                    //         items: 2
+                    //     },
+                    //     700: {
+                    //         gutter: 30
+                    //     },
+                    //     900: {
+                    //         items: 3
+                    //     }
+                    // }
+                });
+            });
+        });
     }
 
     loadAsset(scriptsDir + 'baguettebox/baguettebox.min.css?selector=".gallery"&async=true', function () {

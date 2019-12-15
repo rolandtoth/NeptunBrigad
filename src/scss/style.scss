@@ -32,7 +32,6 @@ $max-hd: 'max-width: #{$_xhd - 1}px';
 @import 'mixins';
 @import 'sharingbuttons';
 @import 'fg_grid/fg_grid';
-@import 'css-fadeshow/scss/css-fadeshow';
 
 // override defaults
 * {
@@ -1287,109 +1286,88 @@ input#text-toggle {
     }
 }
 
-[data-am-fadeshow] {
-    padding-top: 42%;
-    background: $bgcolor;
-    margin-bottom: 1rem;
+.news-slider-wrap {
+    position: relative;
+    margin-bottom: 1.5rem;
 
-    @media ($max-mobile) {
-        padding-top: 0;
-        min-height: 19rem;
-        text-align: center;
-
-        .breadcrumb {
-            display: none;
-        }
+    #news-slider {
+        background: $bgcolor;
     }
 
-    @media ($desktop) {
-        margin-bottom: 2rem;
-    }
-
-    .fs-quick-btn {
-        padding: 0.12rem 0.5rem;
-        border-radius: 0 !important;
-        background: #c82417 !important;
-    }
-
-    .fs-quick-nav {
-        @media ($tablet) {
-            margin-left: 25%;
-        }
-
+    .content {
         @media ($desktop) {
-            margin-left: 16.667%;
+            @include _fg(1 2, 0, 0);
+        }
+        .news-slider {
+            &__text {
+                align-self: center;
+                padding: 1.75rem 1.25rem 0 1.25rem;
+                @media ($desktop) {
+                    padding: 1.75rem 2rem 1rem;
+                }
+            }
+            &__title {
+                margin-bottom: 1rem;
+                h2 {
+                    @extend .highlightTitle;
+                }
+            }
+            &__img {
+                height: 0;
+                padding-top: 66%;
+                background-size: cover;
+                background-position: center top;
+                background-repeat: no-repeat;
+
+                @media ($desktop) {
+                    padding-top: 42%;
+                    cursor: grab;
+
+                    &:active {
+                        cursor: grabbing;
+                    }
+                }
+            }
         }
     }
-}
 
-.fs-slide {
-    @media ($max-mobile) {
-        flex-wrap: nowrap;
-    }
+    .tns-nav {
+        text-align: center;
+        padding: 0.25rem 0;
 
-    @media ($tablet) {
-        @include _fg(2, 0, 0);
-    }
-
-    @media ($desktop) {
-        @include _fg(1 2, 0, 0);
-    }
-
-    .fs-slide-title {
-        margin-bottom: 1rem;
-
-        @media ($max-mobile) {
-            margin-top: 5.5rem;
-        }
-
-        h2 {
-            margin-top: 0;
+        button {
+            width: 0;
+            height: 0;
+            padding: 6px;
+            background: rgba(white, 0.5);
+            margin: 0.3rem;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            &:hover {
+                background: rgba(white, 0.75);
+            }
+            &.tns-nav-active {
+                background: $linkcolor;
+            }
         }
     }
 
-    h2 {
-        @extend .highlightTitle;
+    .tns-controls {
+        text-align: center;
+        padding: 0.5rem;
     }
 
-    .fs-slide-img {
-        position: relative;
-
-        @media ($max-mobile) {
-            position: absolute;
-            top: 1rem;
-            width: 6rem;
-            height: 5rem;
-            margin: 0 1rem 1rem -3rem;
-            left: 50%;
-        }
+    button {
+        border: none;
+        background: transparent;
+        color: $linkcolor;
     }
 
     .readmore-wrap {
-        @media ($max-mobile) {
-            display: none;
-        }
-    }
-
-    .fs-slide-text {
-        padding: 1rem;
-        align-self: center;
-
-        @media ($tablet) {
-            padding: 1.75rem 1.25rem 0.5rem;
-        }
-
+        display: none;
         @media ($desktop) {
-            padding: 2rem 2.5rem;
+            display: block;
         }
     }
-
-    .fs-slide-bg {
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-}
-
-.fs-quick-btn {
-    background-color: $linkcolor;
 }

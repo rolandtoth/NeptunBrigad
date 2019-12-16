@@ -48,6 +48,8 @@ RS9 Színház (1075 Budapest, Rumbach Sebestyén u. 9.)
 
 ### TRIP 2020. január 24. 19:30
 
+![]({{ ("trip" | getPageByPath(collections.work)).data.img | postImage("works", "thumb") | url }})
+
 RS9 Színház (1075 Budapest, Rumbach Sebestyén u. 9.)
 
 [Jegyvásárlás](https://www.jegy.hu/program/trip-99532/623711)

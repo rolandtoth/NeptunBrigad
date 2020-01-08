@@ -26,4 +26,4 @@ Ami a többi színészt illeti: Jankovics Péter mesterien hozza a felkapaszkodo
 
 Kecsegtető vállalkozás a Benne vagy, hiszen mindennemű formai truváj nélkül, szenvtelen könnyedséggel villant fel pillanatképeket az úgynevezett magyar valóságról, amiben valamilyen módon felismerhetjük magunkat, s eközben mégsem érezzük mögötte a feltartott mutatóujjat, tehát az öncélú didaktikusságot. Mindez számos hasonló vállalkozáshoz képest önmagában komoly erény.
 
-https://dunszt.sk/2019/12/06/pufimellenyes-sufnituning/
+Forrás: [https://dunszt.sk/2019/12/06/pufimellenyes-sufnituning/](https://dunszt.sk/2019/12/06/pufimellenyes-sufnituning/)

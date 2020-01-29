@@ -25,7 +25,7 @@
         "Hang": "Nagy Ferenc",
         "Produkciós koordinátor": "Sáfrány Eszter"
     },
-    "gallery": "minden-jot-elling-probafotok",
+    "gallery": "minden-jot-elling",
     "genre": "Színdarab"
 }
 ---

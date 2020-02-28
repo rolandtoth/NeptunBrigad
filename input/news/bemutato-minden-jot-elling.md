@@ -5,7 +5,8 @@
     "permalink": "/hirek/{{ title | slug }}/",
     "gallery": "minden-jot-elling-probafotok",
     "img": "bemutato-minden-jot-elling.jpg",
-    "date": "2019-12-02"
+    "date": "2019-12-02",
+    "active": false
 }
 ---
 

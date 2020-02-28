@@ -3,3 +3,4 @@ dist
 package-lock.json
 input/includes/style.css
 assets/scripts/main.js
+.vscode

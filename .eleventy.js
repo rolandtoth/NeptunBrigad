@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("localeSort", require("./filters/localeSort.js"))
   eleventyConfig.addFilter("sortObjectArrayByDateValue", require("./filters/sortObjectArrayByDateValue.js"))
   eleventyConfig.addFilter("slug", require("./filters/slug.js"));
+  eleventyConfig.addFilter("activePage", require("./filters/activePage.js"));
 
   eleventyConfig.addPassthroughCopy("assets/")
   eleventyConfig.addPassthroughCopy("_headers")

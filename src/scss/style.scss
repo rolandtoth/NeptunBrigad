@@ -234,6 +234,10 @@ h2 {
     .excerpt {
         font-size: 125%;
     }
+
+    p>a>img {
+        display: inline-block;
+    }
 }
 
 h1+.headline-copy {
@@ -664,15 +668,6 @@ article {
         margin-bottom: 1rem;
     }
 }
-
-// .article-image {
-//     @media($desktop) {
-//         &__float-right {
-//             float: right;
-//             margin: 0 0 1rem 2rem;
-//         }
-//     }
-// }
 
 .news-sidebar {
     @media ($desktop) {

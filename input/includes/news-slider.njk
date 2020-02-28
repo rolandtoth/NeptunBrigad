@@ -1,4 +1,4 @@
-{% set pages = collections.news.slice(0, 6) %}
+{% set pages = (collections.news | activePage).slice(0, 6) %}
 {% if pages.length %}
 <div class="news-slider-wrap">
     <div id="news-slider">
@@ -8,14 +8,14 @@
                     <div class="news-slider__text">
                         <div>
                             <div class="news-slider__title">
-                                <p class="breadcrumb">
+                                {# <p class="breadcrumb">
                                     <a href="{{ '/hirek/' | url }}">Hírek</a>
-                                </p>
+                                </p> #}
                                 {% set url = (page.url | url) %}
                                 <h2><a href="{{ url }}">{{ page.data.title }}</a></h2>
                             </div>
                             {%if page.data.excerpt %}
-                                <p>{{ page.data.excerpt | truncate(100, true) }}</p>
+                                <p>{{ page.data.excerpt | truncate(400, true) }}</p>
                             {%endif %}
                             <p class="readmore-wrap"><a href="{{ url }}" class="readmore"></a></p>
                         </div>

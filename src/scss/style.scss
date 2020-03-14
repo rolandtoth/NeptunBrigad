@@ -2,7 +2,7 @@
 
 // variables
 @charset "UTF-8";
-$version: '?v=20190331a';
+$version: '?v=20200314';
 $base: #2c3235;
 $linkcolor: #c82417;
 $darkcolor: #0a101d;
@@ -284,7 +284,7 @@ h1+.headline-copy {
             display: inline-block;
             padding: 0.5rem 0 0.5rem 1.75rem;
             color: white;
-            background: transparent url('#{$images}/icons/icon-document.svg') 0 0.5rem no-repeat;
+            background: transparent url('#{$images}/icons/icon-document.svg') 0 0.6rem no-repeat;
             background-size: $size $size;
             color: #fff;
 

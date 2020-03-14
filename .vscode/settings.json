@@ -1,0 +1,7 @@
+{
+    "es6-css-minify.jsMinPath": "/assets/scripts",
+    "es6-css-minify.cssMinPath": "/assets/styles/",
+    "jshint.options": {
+        "esversion": 6
+    },
+}

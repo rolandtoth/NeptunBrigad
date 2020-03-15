@@ -1,7 +1,7 @@
 ---json
 {
     "title": "Márciusi közönségtalálkozók",
-    "excerpt": "A Neptun Brigád minden márciusi előadása után közönségtalálkozót tartunk. A beszélgetéseken az előadások szereplőivel, alkotóival találkozhatnak és beszélgethetnek az érdeklődők. Az RS9 Színházzal és a Junion Színházzal közös szervezésű közönségtalálkozóinkra nem csak az aznap esti jeggyel rendelkező nézőinket, hanem minden érdeklődőt szeretettel várunk.",
+    "excerpt": "Kedves Közönségünk! A Neptun Brigád márciusra tervezett előadásai a koronavírus miatt kialakult veszélyhelyzet miatt elmaradnak.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "marciusi-kozonsegtalalkozok-2020.jpg",
     "date": "2020-02-28"

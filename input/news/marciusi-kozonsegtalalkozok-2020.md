@@ -13,11 +13,9 @@
 {% set date = "2020. március 4. 20:00" %}
 {% set theater = theaters["rs9"] %}
 
+**Eredetileg tervezett közönségtalálkozóink:**
+
 ## [{{ title }}]({{ (path | getPageByPath(collections.work)).url | url }})
-
-{{ excerpt }}
-
-**Eredetileg tervezett közönségtalálkozók:**
 
 _{{ date }}_
 

@@ -17,6 +17,8 @@
 
 {{ excerpt }}
 
+**Eredetileg tervezett közönségtalálkozók:**
+
 _{{ date }}_
 
 [![]({{ (path | getPageByPath(collections.work)).data.img | postImage("works", "thumb") | url }})]({{ (path | getPageByPath(collections.work)).url | url }})

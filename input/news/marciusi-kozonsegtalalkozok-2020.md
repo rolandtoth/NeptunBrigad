@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Márciusi közönségtalálkozók",
+    "title": "Márciusi közönségtalálkozók - Elmarad!",
     "excerpt": "Kedves Közönségünk! A Neptun Brigád márciusra tervezett előadásai a koronavírus miatt kialakult veszélyhelyzet miatt elmaradnak.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "marciusi-kozonsegtalalkozok-2020.jpg",
@@ -14,6 +14,8 @@
 {% set theater = theaters["rs9"] %}
 
 ## [{{ title }}]({{ (path | getPageByPath(collections.work)).url | url }})
+
+{{ excerpt }}
 
 _{{ date }}_
 

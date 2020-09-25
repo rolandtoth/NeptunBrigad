@@ -24,6 +24,10 @@ date: Last Modified
                     <a href="{{ page.url | url }}">{{ page.data.title }}</a>
                 </h2>
             </div>
+            
+            {% if page.data.subtitle %}
+                <p class="subtitle">{{ page.data.subtitle }}</p>
+            {% endif %}
 
             <p class="headline-copy">{{ page.data.date | dateDisplay }}</p>
             

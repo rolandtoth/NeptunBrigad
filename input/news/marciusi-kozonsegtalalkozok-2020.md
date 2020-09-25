@@ -4,7 +4,8 @@
     "excerpt": "Kedves Közönségünk! A Neptun Brigád márciusra tervezett előadásai a koronavírus miatt kialakult veszélyhelyzet miatt elmaradnak.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "marciusi-kozonsegtalalkozok-2020.jpg",
-    "date": "2020-02-28"
+    "date": "2020-02-28",
+    "active": false
 }
 ---
 

@@ -1,6 +1,7 @@
 ---json
 {
-    "title": "Új bemutató: BANKHITEL (RS9 Színház - Neptun Brigád produkció)",
+    "title": "Új bemutató: BANKHITEL",
+	"subtitle": "RS9 Színház - Neptun Brigád produkció",
     "excerpt": "Jordi Galceran színművét, a Bankhitelt Lengyel Tamás és Baksa Imre szereplésével 2014. decemberében mutattuk be. Az évekig sikerrel játszott darab 2020. októberétől újra műsorra kerül. Az RS9 Színházzal koprodukcióban készülő előadás Bankigazgató karakterét Tűzkő Sándor, az Ügyfél szerepét pedig Baksa Imre alakítja.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "uj-bemutato-bankhitel-2020.jpg",

@@ -35,3 +35,5 @@ Dágvány, napjainkban. Lacibát megütötte a guta. Lánya, Szilvi próbálja t
 Az érvényesülés nem csak szakmai, még kevésbé emberi kiválóság kérdése. Mit kell megtennünk, mit kell tudnunk azon túl, hogy jól végezzük a dolgunkat? Milyen képességek kellenek ahhoz, hogy előbbre jussunk? Mikor lesznek az ábrándos kamaszokból cinikus középvezetők? Idealistákból törtetők? És mi lesz azokkal a szintén tehetségesekkel, rátermettekkel, akiknek nem sikerül? Mi legyen a szelídekkel? Mi legyen a tisztességesekkel?
 
 Mit tehetünk, ha kiderül, az a személyiség, akinek ismerjük magunkat, nem kompatibilis azzal a közeggel, amiben működni kénytelen?
+
+**Benne vagy előadásunkat a Vidor Fesztivál 2020-ban két díjjal is jutalmazta! Messaoudi Emina a legjobb női epizódalakításért SMERALDINA-Díjban, Ficzere Béla a legjobb férfi epizódalakításért BRIGHELLA-Díjban részesült.**

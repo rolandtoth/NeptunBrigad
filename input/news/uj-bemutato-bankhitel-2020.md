@@ -5,6 +5,7 @@
     "excerpt": "Jordi Galceran színművét, a Bankhitelt Lengyel Tamás és Baksa Imre szereplésével 2014. decemberében mutattuk be. Az évekig sikerrel játszott darab 2020. októberétől újra műsorra kerül. Az RS9 Színházzal koprodukcióban készülő előadás Bankigazgató karakterét Tűzkő Sándor, az Ügyfél szerepét pedig Baksa Imre alakítja.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "uj-bemutato-bankhitel-2020.jpg",
+    "gallery": "uj-bemutato-bankhitel-2020",
     "date": "2020-09-25"
 }
 ---

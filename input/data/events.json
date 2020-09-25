@@ -1,65 +1,71 @@
 {
-    "de-mi-lett-a-novel": [
+    "bankhitel": [
         {
-            "date": "2020-03-04",
+            "date": "2020-10-12",
+			"title": "Bankhitel (bemutató)",
             "time": "20:00",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/645243",
-                "Facebook": "https://www.facebook.com/events/186314212482413/?event_time_id=186314219149079"
+                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/681282"
+            }
+        },
+		{
+            "date": "2020-10-26",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/681284"
             }
         }
     ],
-    "minden-jot-elling": [
+    "de-mi-lett-a-novel": [
         {
-            "date": "2020-03-05",
-            "time": "19:30",
+            "date": "2020-10-13",
+            "time": "20:00",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/645223",
-                "Facebook": "https://www.facebook.com/events/603198983851597"
+                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/681088",
+                "Facebook": "https://www.facebook.com/events/784465778956628/"
             }
-        },
+        }
+    ],
+	"minden-jot-elling": [
         {
-            "date": "2020-03-17",
+            "date": "2020-10-23",
             "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/645235",
-                "Facebook": "https://www.facebook.com/events/603198437184985"
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/681126",
+                "Facebook": "https://www.facebook.com/events/615533192480564/"
             }
         }
     ],
     "lancra-vert-szavak": [
         {
-            "date": "2020-03-30",
-            "time": "19:30",
+            "date": "2020-10-08",
+            "time": "20:00",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/645281",
-                "Facebook": "https://www.facebook.com/events/164097865035126/"
+                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/681082"
+            }
+        },
+		{
+            "date": "2020-10-11",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/681087"
             }
         }
     ],
     "benne-vagy": [
         {
-            "date": "2020-03-30",
-            "time": "20:00",
+            "date": "2020-10-28",
+            "time": "19:00",
             "theater": "juranyi",
             "links": {
                 "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/642070",
-                "Facebook": "https://www.facebook.com/events/180938646484742/"
-            }
-        }
-    ],
-    "trip": [
-        {
-            "date": "2020-03-31",
-            "time": "19:30",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/trip-99532/645282",
-                "Facebook": "https://www.facebook.com/events/485221042369996/"
+                "Facebook": "https://www.facebook.com/events/3273883992654735"
             }
         }
     ]

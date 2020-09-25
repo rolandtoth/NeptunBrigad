@@ -13,6 +13,9 @@
                                 </p> #}
                                 {% set url = (page.url | url) %}
                                 <h2><a href="{{ url }}">{{ page.data.title }}</a></h2>
+                                {% if page.data.subtitle %}
+                                    <p class="subtitle">{{ page.data.subtitle }}</p>
+                                {% endif %}
                             </div>
                             {%if page.data.excerpt %}
                                 <p>{{ page.data.excerpt | truncate(400, true) }}</p>

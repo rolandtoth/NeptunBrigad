@@ -19,3 +19,5 @@ Humoros, izgalmas, fordulatos történetet láthatnak nézőink az RS9 Színház
 - Produkciós vezető: Sáfrány Eszter
 
 RENDEZŐ: Cseh Judit
+
+_RS9 Színház - Neptun Brigád produkció_

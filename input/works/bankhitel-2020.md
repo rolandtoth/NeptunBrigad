@@ -2,7 +2,7 @@
 {
     "title": "Bankhitel",
     "excerpt": "Két Férfi, Bankigazgató és egy hitelkérelmező története.",
-    "permalink": "/{{ title | slug }}/",
+    "permalink": "/bankhitel-2020/",
     "img": "bankhitel-2020.jpg",
     "premier": {
         "date": "2020-10-12",

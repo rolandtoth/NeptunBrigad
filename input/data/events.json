@@ -1,15 +1,15 @@
 {
-    "bankhitel": [
+    "bankhitel-2020": [
         {
             "date": "2020-10-12",
-			"title": "Bankhitel (bemutató)",
+		"title": "Bankhitel (bemutató)",
             "time": "20:00",
             "theater": "rs9",
             "links": {
                 "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/681282"
             }
         },
-		{
+	{
             "date": "2020-10-26",
             "time": "20:00",
             "theater": "rs9",
@@ -29,16 +29,16 @@
             }
         }
     ],
-	"minden-jot-elling": [
-        {
-            "date": "2020-10-23",
-            "time": "19:30",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/681126",
-                "Facebook": "https://www.facebook.com/events/615533192480564/"
-            }
-        }
+    "minden-jot-elling": [
+	{
+	    "date": "2020-10-23",
+	    "time": "19:30",
+	    "theater": "rs9",
+	    "links": {
+		"Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/681126",
+		"Facebook": "https://www.facebook.com/events/615533192480564/"
+	    }
+	}
     ],
     "lancra-vert-szavak": [
         {
@@ -49,7 +49,7 @@
                 "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/681082"
             }
         },
-		{
+	{
             "date": "2020-10-11",
             "time": "20:00",
             "theater": "rs9",

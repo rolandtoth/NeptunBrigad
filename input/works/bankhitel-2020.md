@@ -7,7 +7,7 @@
     "premier": {
         "date": "2020-10-12",
         "time": "20:00",
-        "theater": "sanyiesaranka"
+        "theater": "rs9"
     },
     "link": "https://rs9.hu/eloadas/bankhitel/2020-10-12/",
 	"actors": {

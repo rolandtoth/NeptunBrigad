@@ -1,71 +1,27 @@
 {
-    "bankhitel-2020": [
+    "a-pacal-ideje": [
         {
-            "date": "2020-10-12",
-		"title": "Bankhitel (bemutató)",
-            "time": "20:00",
+            "date": "2021-11-21",
+            "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/681282"
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/748788"
             }
         },
-	{
-            "date": "2020-10-26",
-            "time": "20:00",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/681284"
-            }
-        }
-    ],
-    "de-mi-lett-a-novel": [
         {
-            "date": "2020-10-13",
-            "time": "20:00",
+            "date": "2021-12-08",
+            "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107/681088",
-                "Facebook": "https://www.facebook.com/events/784465778956628/"
-            }
-        }
-    ],
-    "minden-jot-elling": [
-	{
-	    "date": "2020-10-23",
-	    "time": "19:30",
-	    "theater": "rs9",
-	    "links": {
-		"Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367/681126",
-		"Facebook": "https://www.facebook.com/events/615533192480564/"
-	    }
-	}
-    ],
-    "lancra-vert-szavak": [
-        {
-            "date": "2020-10-08",
-            "time": "20:00",
-            "theater": "rs9",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/681082"
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/758354"
             }
         },
-	{
-            "date": "2020-10-11",
-            "time": "20:00",
+        {
+            "date": "2021-12-29",
+            "time": "19:30",
             "theater": "rs9",
             "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/lancra-vert-szavak-89458/681087"
-            }
-        }
-    ],
-    "benne-vagy": [
-        {
-            "date": "2020-10-28",
-            "time": "19:00",
-            "theater": "juranyi",
-            "links": {
-                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/642070",
-                "Facebook": "https://www.facebook.com/events/3273883992654735"
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/758370"
             }
         }
     ]

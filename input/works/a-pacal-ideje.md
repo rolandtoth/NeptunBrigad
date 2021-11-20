@@ -18,7 +18,7 @@
         "Díszlet": "Schneider Zoltán",
         "Jelmez": "Kovács Andrea",
         "Fény": "Csáki Rita, Makray Gábor",
-        "Hang": "Koleszár Bazil Péter",
+        "Hang": "Koleszár Bazil Péter"
     },
     "actors": {
         "Ficzere Béla": "Ficzere Béla"

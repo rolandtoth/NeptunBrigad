@@ -18,13 +18,14 @@
         "Díszlet": "Schneider Zoltán",
         "Jelmez": "Kovács Andrea",
         "Fény": "Csáki Rita, Makray Gábor",
-        "Hang": "Koleszár Bazil Péter"
+        "Hang": "Koleszár Bazil Péter",
+        "Fotók": "Dúró Gábor"
     },
     "actors": {
         "Ficzere Béla": "Ficzere Béla"
     },
     "gallery": "a-pacal-ideje",
-    "genre": "Zenés gasztro abszurd"
+    "genre": "(zenés) gasztro abszurd"
 }
 ---
 
@@ -42,3 +43,11 @@ Barátaim, eljött a tisztánlátás ideje. Egyetek, igyatok, csak mértéket ta
 Eljött A Pacal ideje, és kisfröccsel ajánljuk!
 
 _Cserna Szabó András 77 magyar pacal című könyve nyomán, nagyon szabadon írta a Neptun Brigád._
+
+**Támogatók:**
+
+- Magyar Művészeti Akadémia
+- Emberi Erőforrás Támogatáskezelő
+- RS9 Színház
+- Gépész Centrál Kft.
+- Tipton Budapest

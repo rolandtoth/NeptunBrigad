@@ -24,5 +24,53 @@
                 "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/758370"
             }
         }
+    ],
+    "benne-vagy": [
+        {
+            "date": "2021-12-09",
+            "time": "20:00",
+            "theater": "juranyi",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/757485"
+            }
+        }
+    ],
+    "bankhitel": [
+        {
+            "date": "2021-12-12",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/758385"
+            }
+        }
+    ],
+    "minden-jot-elling": [
+        {
+            "date": "2021-12-01",
+            "time": "19:30",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367?q=minden+j%c3%b3t%2c+elling!&sgtype=pfprogram"
+            }
+        },
+        {
+            "date": "2021-12-13",
+            "time": "19:30",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367?q=minden+j%c3%b3t%2c+elling!&sgtype=pfprogram"
+            }
+        }
+    ],
+    "de-mi-lett-a-novel": [
+        {
+            "date": "2021-12-31",
+            "time": "20:00",
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107?q=de+mi+lett+a+n%c5%91vel%3f&sgtype=pfprogram"
+            }
+        }
     ]
 }

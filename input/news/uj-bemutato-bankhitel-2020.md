@@ -6,7 +6,8 @@
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "uj-bemutato-bankhitel-2020.jpg",
     "gallery": "uj-bemutato-bankhitel-2020",
-    "date": "2020-09-25"
+    "date": "2020-09-25",
+    "active": false
 }
 ---
 

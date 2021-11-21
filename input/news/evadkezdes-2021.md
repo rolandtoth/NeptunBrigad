@@ -1,8 +1,8 @@
 ---json
 {
     "title": "Évadkezdés 2021",
-    "subtitle": "",
-    "excerpt": "",
+    "subtitle": "Két új színházi bemutató, darabfelújítás és öt repertoár előadás",
+    "excerpt": "A Neptun Brigád alkotói egy olyan kíváncsi és nyitott közeget igyekeznek maguk köré kialakítani, ami elsősorban a kortárs gondolatok és színházi irányzatok felé keresi az utat.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "evadkezdes-2021.jpg",
     "date": "2021-11-20",
@@ -30,17 +30,19 @@ Vass György: Az előadás nagyobb része, 2/3-a, reflexiók és reakciók Csern
 
 Vass György: Ami létrejött:  A pacal védőbeszéde, requem a pacalért, egy gaszrto abszurd. Könnyed, zenés történeti áttekintés. Egy áldott és elátkozott alany, humoros hányattatásai a történelem vérzivataros századaiból. A pacal vitatott megítélése kapcsán saját létezésünk bizonytalanságai is felszínre kerülnek, és felsejlik, hogy mennyire vagyunk mi magunk is a történelem és a közvetlen környezetünk rabjai.
 
-<!-- KÉP -->
+{% set path = "assets/images/news/evadkezdes-2021/ficzere-bela-a-pacal-probakep.jpg" %}
+![]({{ path | postImage("works", "thumb") | url }})
 
-<!-- _Ficzere Béla A pacal ideje című előadásban. Próbakép_ -->
+_Ficzere Béla A pacal ideje című előadásban. Próbakép_
 
 Az évad második felében, 2022. tavaszán kerül színre a társulat és Kovács Dániel Ambrus koprodukciója, a Kánon című előadás. A darab szereplői: Jankovics Péter, Messaoudi Emina, Chován Gábor és Ficzere Béla. A produkciót Kovács Dániel Ambrus írja és rendezi.
 
 A produkció egy formálódó trilógia második darabja, a már bemutatott Benne vagy csapatával.
 
-<!-- KÉP -->
+{% set path = "assets/images/news/evadkezdes-2021/benne-vagy-csapata.jpg" %}
+![]({{ path | postImage("works", "thumb") | url }})
 
-<!-- _Benne vagy csapata_ -->
+_Benne vagy csapata_
 
 A négyszereplős kamaradarab egy fiktív munkacsoport belső vívódásait tárja elénk, sok humorral. Azt kapták feladatul, hogy előítéletektől mentesen, a lehető legpártatlanabb módon járják körül a kultúra és az állam kapcsolatának kérdéskörét.
 
@@ -48,13 +50,15 @@ Az ütköztetett érvek parázs vitákba torkollanak, a négy karakter (a Nagy �
 
 „Célunk az előadással, hogy témánkat: a magyar kultúra ápolásának, megőrzésének, és végső soron mibenlétének kérdését humoros, szórakoztató módon tárjuk nézőink elé. A szöveg gerincét könnyed, fanyar humorú viták, váratlan lebőgések, félreértések, elegáns riposztok adják majd.” Kovács Dániel Ambrus Jordi Galceran színművét, a Bankhitelt 2014 decemberében mutatta be a társulat. Az évekig sikerrel játszott darab az RS9 Színházzal koprodukcióban látható újra. A Bankigazgató karakterét Tűzkő Sándor, az Ügyfél szerepét pedig Baksa Imre alakítja.
 
-<!-- KÉP -->
+{% set path = "assets/images/news/evadkezdes-2021/vass-gyorgy-baksa-imre-minden-jot-elling.jpg" %}
+![]({{ path | postImage("works", "thumb") | url }})
 
-<!-- _Vass György és Baksa Imre a Minden jót, Elling! című előadásban_ -->
+_Vass György és Baksa Imre a Minden jót, Elling! című előadásban_
 
 Ezeken túl a Láncra vert szavak, a De mi lett a nővel?, a Minden jót, Elling!, a Trip és a Vidor-díjas Benne vagy az idei évadban is műsoron marad.
 
-<!-- KÉP -->
+{% set path = "assets/images/news/evadkezdes-2021/botos-eva-baksa-imre-lancra-vert-szavak.jpg" %}
+![]({{ path | postImage("works", "thumb") | url }})
 
-<!-- _Botos Éva és Baksa Imre a Láncra vert szavak című előadásban_ -->
+_Botos Éva és Baksa Imre a Láncra vert szavak című előadásban_
 

@@ -672,6 +672,13 @@ article {
         display: block;
         margin-bottom: 1rem;
     }
+
+    blockquote {
+        border-left: 1px solid white;
+        margin-left: 0;
+        padding-left: 1rem;
+        font-style: italic;
+    }
 }
 
 .news-sidebar {

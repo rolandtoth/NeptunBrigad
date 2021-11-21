@@ -30,8 +30,8 @@ Vass György: Az előadás nagyobb része, 2/3-a, reflexiók és reakciók Csern
 
 Vass György: Ami létrejött:  A pacal védőbeszéde, requem a pacalért, egy gaszrto abszurd. Könnyed, zenés történeti áttekintés. Egy áldott és elátkozott alany, humoros hányattatásai a történelem vérzivataros századaiból. A pacal vitatott megítélése kapcsán saját létezésünk bizonytalanságai is felszínre kerülnek, és felsejlik, hogy mennyire vagyunk mi magunk is a történelem és a közvetlen környezetünk rabjai.
 
-{% set path = "assets/images/news/evadkezdes-2021/ficzere-bela-a-pacal-probakep.jpg" %}
-![]({{ path | postImage("works", "thumb") | url }})
+{% set path = "evadkezdes-2021/ficzere-bela-a-pacal-probakep.jpg" %}
+![Ficzere Béla A pacal ideje című előadásban. Próbakép]({{ path | postImage("news", "thumb") | url }})
 
 _Ficzere Béla A pacal ideje című előadásban. Próbakép_
 
@@ -39,8 +39,8 @@ Az évad második felében, 2022. tavaszán kerül színre a társulat és Ková
 
 A produkció egy formálódó trilógia második darabja, a már bemutatott Benne vagy csapatával.
 
-{% set path = "assets/images/news/evadkezdes-2021/benne-vagy-csapata.jpg" %}
-![]({{ path | postImage("works", "thumb") | url }})
+{% set path = "evadkezdes-2021/benne-vagy-csapata.jpg" %}
+![Benne vagy csapata]({{ path | postImage("news", "thumb") | url }})
 
 _Benne vagy csapata_
 
@@ -50,15 +50,14 @@ Az ütköztetett érvek parázs vitákba torkollanak, a négy karakter (a Nagy �
 
 „Célunk az előadással, hogy témánkat: a magyar kultúra ápolásának, megőrzésének, és végső soron mibenlétének kérdését humoros, szórakoztató módon tárjuk nézőink elé. A szöveg gerincét könnyed, fanyar humorú viták, váratlan lebőgések, félreértések, elegáns riposztok adják majd.” Kovács Dániel Ambrus Jordi Galceran színművét, a Bankhitelt 2014 decemberében mutatta be a társulat. Az évekig sikerrel játszott darab az RS9 Színházzal koprodukcióban látható újra. A Bankigazgató karakterét Tűzkő Sándor, az Ügyfél szerepét pedig Baksa Imre alakítja.
 
-{% set path = "assets/images/news/evadkezdes-2021/vass-gyorgy-baksa-imre-minden-jot-elling.jpg" %}
-![]({{ path | postImage("works", "thumb") | url }})
+{% set path = "evadkezdes-2021/vass-gyorgy-baksa-imre-minden-jot-elling.jpg" %}
+![Vass György és Baksa Imre a Minden jót, Elling! című előadásban]({{ path | postImage("news", "thumb") | url }})
 
 _Vass György és Baksa Imre a Minden jót, Elling! című előadásban_
 
 Ezeken túl a Láncra vert szavak, a De mi lett a nővel?, a Minden jót, Elling!, a Trip és a Vidor-díjas Benne vagy az idei évadban is műsoron marad.
 
-{% set path = "assets/images/news/evadkezdes-2021/botos-eva-baksa-imre-lancra-vert-szavak.jpg" %}
-![]({{ path | postImage("works", "thumb") | url }})
+{% set path = "evadkezdes-2021/botos-eva-baksa-imre-lancra-vert-szavak.jpg" %}
+![Botos Éva és Baksa Imre a Láncra vert szavak című előadásban]({{ path | postImage("news", "thumb") | url }})
 
 _Botos Éva és Baksa Imre a Láncra vert szavak című előadásban_
-

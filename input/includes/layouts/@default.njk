@@ -13,6 +13,7 @@
         <meta property="og:description" content="{{ description }}">
         <meta property="og:url" content="{{ page.url | httpUrl }}" id="meta-og-url">
         <meta property="fb:app_id" content="966242223397117">
+        <meta name="theme-color" content="#1B1F24">
         {% if img -%}
             {%- set imgDir = tags.replace('work', 'works') %}
             {%- set dimensions = img | postImage(imgDir) | imageDimensions("object") %}
@@ -27,7 +28,7 @@
         <script>document.querySelector('html').classList.remove('no-js');</script>
         <link rel="stylesheet" href="{{ '/assets/styles/style.css' | url | cacheVersion }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon.png" | cacheVersion }}">
-        <meta name="theme-color" content="#1B1F24">
+        <link rel="canonical" href="{{ page.url | httpUrl }}">
     </head>
     <body class="{% if page.fileSlug !== '' %}{{ page.fileSlug }}{% else %}home{% endif %}">
         <input type="checkbox" id="menu-toggle" />

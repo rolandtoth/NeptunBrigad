@@ -4,4 +4,11 @@
     "jshint.options": {
         "esversion": 6
     },
+    "spellright.language": [
+        "hu"
+    ],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ],
 }

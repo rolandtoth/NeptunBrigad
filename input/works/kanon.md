@@ -6,7 +6,7 @@
     "img": "kanon.jpg",
     "premier": {
         "date": "2022-04-05",
-        "time": "19:30",
+        "time": "19:00",
         "theater": "juranyi"
     },
     "producers": {
@@ -18,7 +18,8 @@
         "Rendezőasszisztens": "Balla Anett",
         "Írja és rendezi": "Kovács Dániel Ambrus"
     },
-    "gallery": "kanon"
+    "gallery": "kanon",
+    "genre": "Színdarab"
 }
 ---
 

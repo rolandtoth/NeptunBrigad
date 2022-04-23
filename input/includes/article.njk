@@ -4,13 +4,13 @@
     {% set imgLarge = page.data.img | postImage("works") %}
     {% set imgThumb = page.data.img | postImage("works", "thumb") %}
     <div class="article-image">
-     <a href="{{ page.url | url }}"{% if loop.index === 1 %} style="background-image: url('{{ imgLarge | url }}');"{% endif %} title="">
-        <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
-     </a>
+        <a href="{{ page.url | url }}"{% if loop.index === 1 %} style="background-image: url('{{ imgLarge | url }}');"{% endif %} title="">
+            <img loading="lazy" src="{{ imgThumb | url | cacheVersion }}" {{ imgThumb | imageDimensions | safe }} alt=""/>
+        </a>
     </div>
-    {% if nextEvents %}
-        {% set events = (nextEvents | sortObjectArrayByDateValue("date")) %}
-        <div class="next-events">
+    {# {% if nextEvents %} #}
+        {# {% set events = (nextEvents | sortObjectArrayByDateValue("date")) %} #}
+        {# <div class="next-events">
         {% for event in events %}
             {% set theater = theaters[event.theater] %}
             <a href="{{ page.url | url }}#eloadasok">
@@ -19,12 +19,12 @@
                 <small>{{ theater.name }}</small>
             </a>
         {% endfor %}
-        </div>
-    {% endif %}
+        </div> #}
+    {# {% endif %} #}
 {% endif %}
     <div class="description">
         <h2>
-          <a href="{{ page.url | url }}" title="">{{ page.data.title }}</a>
+            <a href="{{ page.url | url }}" title="">{{ page.data.title }}</a>
         </h2>
         <p class="headline-copy">{{ page.data.genre | lower }}</p>
         <p class="excerpt">{{ page.data.excerpt | safe }}</p>

@@ -1,3 +1,65 @@
 {
-
+    "kanon": [
+        {
+            "theater": "juranyi"
+        }
+    ],
+    "a-pacal-ideje": [
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/748788"
+            }
+        },
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/758354"
+            }
+        },
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://rs9.jegy.hu/program/a-pacal-ideje-121182/758370"
+            }
+        }
+    ],
+    "benne-vagy": [
+        {
+            "theater": "juranyi",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/benne-vagy-102555/757485"
+            }
+        }
+    ],
+    "bankhitel-2020": [
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/bankhitel-115589/758385"
+            }
+        }
+    ],
+    "minden-jot-elling": [
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367?q=minden+j%c3%b3t%2c+elling!&sgtype=pfprogram"
+            }
+        },
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/minden-jot-elling-112367?q=minden+j%c3%b3t%2c+elling!&sgtype=pfprogram"
+            }
+        }
+    ],
+    "de-mi-lett-a-novel": [
+        {
+            "theater": "rs9",
+            "links": {
+                "Jegyvásárlás": "https://www.jegy.hu/program/de-mi-lett-a-novel-76107?q=de+mi+lett+a+n%c5%91vel%3f&sgtype=pfprogram"
+            }
+        }
+    ]
 }

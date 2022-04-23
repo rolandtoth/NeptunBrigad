@@ -38,3 +38,9 @@ A helyiek a végsőkig ellenállnak, ám az igaz oldal nem hátrál meg, erőt g
 Kovács Dániel Ambrus és a Neptun Brigád produkciója.
 
 Támogatók: NKA, Emberi Erőforrás Támogatáskezelő, Jurányi Ház
+
+### Sajtóvisszhang:
+
+Puskás Panni: Amikor Demeter Szilárd lovas rockoperát rendezett Kőalján | 2022-04-14 szinhaz.net
+
+[https://szinhaz.net/2022/04/14/puskas-panni-amikor-demeter-szilard-lovas-rockoperat-rendezett-koaljan/](https://szinhaz.net/2022/04/14/puskas-panni-amikor-demeter-szilard-lovas-rockoperat-rendezett-koaljan/)

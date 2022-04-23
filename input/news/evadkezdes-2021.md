@@ -6,7 +6,7 @@
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "evadkezdes-2021.jpg",
     "date": "2021-11-20",
-    "active": true
+    "active": false
 }
 ---
 

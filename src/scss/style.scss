@@ -617,6 +617,7 @@ article {
         margin: 0 0 1rem;
         font-size: 1.27rem;
         line-height: 1.33;
+        @extend .highlightTitle;
 
         @media ($desktop) {
             font-size: 1.36rem;

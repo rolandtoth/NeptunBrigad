@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
         return 1
       }
       if (a.data.premier && a.data.premier.date && b.data.premier && b.data.premier.date) {
-        return new Date(a.data.premier.date) - new Date(b.data.premier.date)
+        return new Date(b.data.premier.date) - new Date(a.data.premier.date)
       }
 
       return 0;

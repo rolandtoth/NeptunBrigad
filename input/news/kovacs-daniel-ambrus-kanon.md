@@ -23,6 +23,8 @@ Szereplők:
 - Messaoudi Emina
 - Ficzere Béla
 
+Alkotók:
+
 - Produkciós vezető: Sáfrány Eszter
 - Zene: Jankovics Péter
 - Fény: Szabon Balázs

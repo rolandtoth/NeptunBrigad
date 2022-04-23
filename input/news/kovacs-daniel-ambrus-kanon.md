@@ -1,7 +1,7 @@
 ---json
 {
     "title": "Kovács Dániel Ambrus: Kánon",
-    "excerpt": "Kovács Dániel Ambrus és a Neptun Brigád produkciója",
+    "excerpt": "A Jurányi Inkubátorház kamaratermében 2022. április 5-én bemutattuk Kovács Dániel Ambrus Kánon című darabját. A produkció új, de a csapat ismerősnek tűnhet, ugyanis a Benne vagy című előadást készítettük már együtt.",
     "permalink": "/hirek/{{ title | slug }}/",
     "img": "kovacs-daniel-ambrus-kanon.jpg",
     "date": "2022-04-23"

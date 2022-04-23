@@ -28,7 +28,7 @@ A helyi mazsorettcsoport a kultúr-igazgató Ágika vezetésével már javában 
 
 A helyiek a végsőkig ellenállnak, ám az igaz oldal nem hátrál meg, erőt gyűjt, és Sanya lovai hátán foglalja vissza jogos jussát, a Vásottkövet.
 
-Szereplők:
+### Szereplők:
 
 - Jankovics Péter
 - Chován Gábor

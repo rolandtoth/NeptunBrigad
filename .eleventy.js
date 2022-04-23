@@ -30,8 +30,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("work", function (collection) {
     return collection.getFilteredByTag("work").sort(function (a, b) {
-      let eventsA = events[a.data.premier.date]
-      let eventsB = events[b.data.premier.date]
+      let eventsA = events[a.fileSlug]
+      let eventsB = events[b.fileSlug]
 
       if (a.data.sticky) {
         return -1
@@ -51,6 +51,11 @@ module.exports = function (eleventyConfig) {
       if (eventsB) {
         return 1
       }
+      if (a.data.premier && a.data.premier.date && b.data.premier && b.data.premier.date) {
+        return new Date(a.data.premier.date) - new Date(b.data.premier.date)
+      }
+
+      return 0;
     })
   })
 

@@ -2,12 +2,12 @@
 
 // variables
 @charset "UTF-8";
-$version: '?v=20200314';
+$version: '?v=20220423';
 $base: #2c3235;
 $linkcolor: #c82417;
 $darkcolor: #0a101d;
 $bgcolor: rgba(31, 33, 44, 1);
-$bgcolorTransparent: rgba(darken($darkcolor, 20%), 70%);
+$bgcolorTransparent: rgba(darken($darkcolor, 10%), 0.64);
 $bordercolor: #dadada;
 $mutedWhite: rgba(white, 0.5);
 $images: '/assets/images';
